@@ -1,0 +1,11 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="0.1.0"></a>
+# 0.1.0 (2016-11-25)
+
+
+### Features
+
+* initial tslint and typescript configs ([3f4ae31](https://github.com/clebert/ts-config/commit/3f4ae31))
