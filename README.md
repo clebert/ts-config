@@ -1,6 +1,7 @@
 # ts-config
 
 [![npm](https://img.shields.io/npm/v/ts-config.svg?maxAge=2592000)](https://www.npmjs.com/package/ts-config)
+[![Build Status](https://travis-ci.org/clebert/ts-config.svg?branch=master)](https://travis-ci.org/clebert/ts-config)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Extendable [TSLint](https://github.com/palantir/tslint) and [TypeScript](https://github.com/Microsoft/TypeScript) configs.
@@ -40,6 +41,12 @@ Installing the dev dependencies:
 
 ```sh
 npm install
+```
+
+Running the tests:
+
+```sh
+npm test
 ```
 
 Committing a new change:
