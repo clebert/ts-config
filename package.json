@@ -19,7 +19,7 @@
   "scripts": {
     "commit": "git-cz",
     "commitmsg": "conventional-changelog-lint -e",
-    "release": "standard-version",
+    "release": "npm test && standard-version",
     "test": "npm run test-tslint && npm run test-tslint-rules && npm run test-typescript",
     "test-tslint": "tslint test.ts",
     "test-tslint-rules": "! tslint test.ts 2>&1 | grep -q 'Could not find implementations'",
