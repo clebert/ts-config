@@ -122,8 +122,6 @@
       "check-separator",
       "check-type",
       "check-typecast"
-    ],
-
-    "unknown-rule": true
+    ]
   }
 }
