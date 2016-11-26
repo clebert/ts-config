@@ -88,7 +88,7 @@
     "array-type": [true, "array"],
     "arrow-parens": true,
     "class-name": true,
-    "comment-format": [true, "check-space", "check-uppercase"],
+    "comment-format": [true, "check-space"],
     "completed-docs": [false],
     "file-header": [false],
     "interface-name": [true, "never-prefix"],
