@@ -19,7 +19,8 @@
   "scripts": {
     "commit": "git-cz",
     "commitmsg": "conventional-changelog-lint -e",
-    "release": "standard-version"
+    "release": "standard-version",
+    "test": "! tslint test.ts 2>&1 | grep -q 'Could not find implementations'"
   },
   "devDependencies": {
     "commitizen": "2.8.6",
