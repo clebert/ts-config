@@ -27,10 +27,10 @@ Add a `tsconfig.json` file to your projects root directory with the contents bel
 {
   "extends": "./node_modules/ts-config/tsconfig.json",
   "compilerOptions": {
-    "outDir": "./lib",
-    "rootDir": "./src"
+    "outDir": "lib",
+    "rootDir": "src"
   },
-  "include": ["./src/**/*.ts"]
+  "include": ["src/**/*.ts"]
 }
 ```
 
