@@ -31,7 +31,7 @@ Add a `tsconfig.json` file to your projects root directory with the contents bel
     "outDir": "lib",
     "rootDir": "src"
   },
-  "include": ["src/**/*.ts"]
+  "exclude": ["lib", "node_modules"]
 }
 ```
 
