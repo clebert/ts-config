@@ -30,7 +30,7 @@
     "conventional-changelog-lint": "1.1.0",
     "cz-customizable": "4.0.0",
     "husky": "0.11.9",
-    "standard-version": "3.0.0",
+    "standard-version": "4.0.0",
     "tslint": "4.0.2",
     "typescript": "2.1.1"
   },
