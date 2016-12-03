@@ -44,7 +44,7 @@
     "preserveConstEnums": false,
     "pretty": true,
     // "reactNamespace": "React",
-    "removeComments": true,
+    "removeComments": false,
     // "rootDir": "src",
     // "rootDirs": [],
     "skipLibCheck": false,
