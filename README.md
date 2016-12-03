@@ -37,28 +37,36 @@ Add a `tsconfig.json` file to your projects root directory with the contents bel
 
 ## Development
 
-Installing the dev dependencies:
+### Installing the dev dependencies
 
 ```sh
 npm install
 ```
 
-Running the tests:
+### Running the tests
 
 ```sh
 npm test
 ```
 
-Committing a new change:
+### Committing a new change
 
 ```sh
-npm run commit
+npm run cz
 ```
 
-Releasing a new version:
+### Publishing a new version
 
 ```sh
 npm run release
+```
+
+```sh
+git push --follow-tags origin master
+```
+
+```sh
+npm publish
 ```
 
 ---
