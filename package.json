@@ -17,13 +17,14 @@
     }
   },
   "scripts": {
-    "commit": "git-cz",
     "commitmsg": "conventional-changelog-lint -e",
-    "release": "npm test && standard-version",
-    "test": "npm run test-tslint && npm run test-tslint-rules && npm run test-typescript",
-    "test-tslint": "tslint test.ts",
-    "test-tslint-rules": "! tslint test.ts 2>&1 | grep -q 'Could not find implementations'",
-    "test-typescript": "tsc --project ."
+    "cz": "git-cz",
+    "prerelease": "git checkout master && npm prune && npm install && npm test",
+    "release": "standard-version",
+    "test": "npm run test:tslint && npm run test:tslint-rules && npm run test:typescript",
+    "test:tslint": "tslint test.ts",
+    "test:tslint-rules": "! tslint test.ts 2>&1 | grep -q 'Could not find implementations'",
+    "test:typescript": "tsc --project ."
   },
   "devDependencies": {
     "commitizen": "2.8.6",
