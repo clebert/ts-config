@@ -19,24 +19,23 @@
   "scripts": {
     "commitmsg": "conventional-changelog-lint -e",
     "cz": "git-cz",
-    "prerelease": "git checkout master && npm prune && npm install && npm test",
+    "prerelease": "npm prune && npm install && npm test",
     "release": "standard-version",
-    "test": "npm run test:tslint && npm run test:tslint-rules && npm run test:typescript",
-    "test:tslint": "tslint test.ts",
-    "test:tslint-rules": "! tslint test.ts 2>&1 | grep -q 'Could not find implementations'",
+    "test": "npm run test:tslint && npm run test:typescript",
+    "test:tslint": "! tslint --config ./tslint-type-info.json --project . --type-check 2>&1 | grep -q 'Could not find implementations'",
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {
-    "commitizen": "2.8.6",
+    "commitizen": "2.9.2",
     "conventional-changelog-lint": "1.1.0",
     "cz-customizable": "4.0.0",
-    "husky": "0.11.9",
+    "husky": "0.12.0",
     "standard-version": "4.0.0",
-    "tslint": "4.0.2",
-    "typescript": "2.1.1"
+    "tslint": "4.1.1",
+    "typescript": "2.1.4"
   },
   "peerDependencies": {
-    "tslint": "4.0.x",
+    "tslint": "4.1.x",
     "typescript": "2.1.x"
   }
 }

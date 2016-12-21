@@ -12,11 +12,13 @@
     "no-any": true,
     "no-inferrable-types": [true, "ignore-params"],
     "no-internal-module": true,
+    "no-magic-numbers": true,
     "no-namespace": [true, "allow-declarations"],
     "no-reference": true,
     "no-var-requires": true,
-    "only-arrow-functions": [true, "allow-declarations"],
+    "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
     "prefer-for-of": true,
+    // "promise-function-async": true, // This rule requires type info to run
     "typedef": [true,
       "call-signature",
       "parameter",
@@ -37,6 +39,7 @@
     "ban": false,
     "curly": true,
     "forin": true,
+    "import-blacklist": true,
     "label-position": true,
     "no-arg": true,
     "no-bitwise": true,
@@ -48,6 +51,7 @@
     "no-empty": true,
     "no-eval": true,
     // "no-for-in-array": true, // This rule requires type info to run
+    // "no-inferred-empty-object-type": true, // This rule requires type info to run
     "no-invalid-this": [true, "check-function-in-method"],
     "no-null-keyword": false,
     "no-shadowed-variable": true,
@@ -60,6 +64,7 @@
     "no-var-keyword": true,
     "radix": true,
     // "restrict-plus-operands": true, // This rule requires type info to run
+    // "strict-boolean-expressions": true, // This rule requires type info to run
     "switch-default": false,
     "triple-equals": [true, "allow-null-check"],
     "use-isnan": true,
@@ -79,6 +84,7 @@
     "no-require-imports": true,
     "no-trailing-whitespace": true,
     "object-literal-sort-keys": false,
+    "prefer-const": true,
     "trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
 
     // Style
