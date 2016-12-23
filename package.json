@@ -31,7 +31,7 @@
     "cz-customizable": "4.0.0",
     "husky": "0.12.0",
     "standard-version": "4.0.0",
-    "tslint": "4.1.1",
+    "tslint": "4.2.0",
     "typescript": "2.1.4"
   },
   "peerDependencies": {
