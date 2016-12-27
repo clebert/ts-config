@@ -21,8 +21,9 @@
     "cz": "git-cz",
     "prerelease": "npm prune && npm install && npm test",
     "release": "standard-version",
-    "test": "npm run test:tslint && npm run test:typescript",
-    "test:tslint": "! tslint --config ./tslint-type-info.json --project . --type-check 2>&1 | grep -q 'Could not find implementations'",
+    "test": "npm run test:tslint && npm run test:tslint-rules && npm run test:typescript",
+    "test:tslint": "tslint --config ./tslint-type-info.json --project . --type-check",
+    "test:tslint-rules": "! tslint --config ./tslint-type-info.json --project . --type-check 2>&1 | grep -q 'Could not find implementations'",
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {
