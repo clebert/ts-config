@@ -10,6 +10,7 @@
     "member-access": [true, "check-accessor", "check-constructor"],
     "member-ordering": [true, {"order": "statics-first"}],
     "no-any": true,
+    "no-empty-interface": true,
     "no-inferrable-types": [true, "ignore-params"],
     "no-internal-module": true,
     "no-magic-numbers": true,
@@ -56,12 +57,14 @@
     "no-null-keyword": false,
     "no-shadowed-variable": true,
     "no-string-literal": false,
+    "no-string-throw": true,
     "no-switch-case-fall-through": true,
     "no-unsafe-finally": true,
     "no-unused-expression": true,
     "no-unused-new": true,
     "no-use-before-declare": true,
     "no-var-keyword": true,
+    // "no-void-expression": true, // This rule requires type info to run
     "radix": true,
     // "restrict-plus-operands": true, // This rule requires type info to run
     // "strict-boolean-expressions": true, // This rule requires type info to run
@@ -92,12 +95,14 @@
 
     "align": [true, "statements"],
     "array-type": [true, "array"],
-    "arrow-parens": true,
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "callable-types": true,
     "class-name": true,
     "comment-format": [true, "check-space"],
     "completed-docs": [false],
     "file-header": [false],
     "interface-name": [true, "never-prefix"],
+    "interface-over-type-literal": true,
     "jsdoc-format": true,
     "new-parens": true,
     "no-angle-bracket-type-assertion": true,

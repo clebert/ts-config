@@ -4,6 +4,7 @@
     "promise-function-async": true,
     "no-for-in-array": true,
     "no-inferred-empty-object-type": true,
+    "no-void-expression": true,
     "restrict-plus-operands": true,
     "strict-boolean-expressions": true
   }
