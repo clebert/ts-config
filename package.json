@@ -27,7 +27,7 @@
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {
-    "commitizen": "2.9.2",
+    "commitizen": "2.9.3",
     "conventional-changelog-lint": "1.1.0",
     "cz-customizable": "4.0.0",
     "husky": "0.12.0",
