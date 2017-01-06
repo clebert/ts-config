@@ -33,6 +33,7 @@
       "property-declaration": "nospace",
       "variable-declaration": "nospace"
     }],
+    "unified-signatures": true,
 
     // Functionality
     // These rules catch common errors in JS programming or otherwise confusing constructs that are prone to producing bugs:
@@ -70,6 +71,7 @@
     // "strict-boolean-expressions": true, // This rule requires type info to run
     "switch-default": false,
     "triple-equals": [true, "allow-null-check"],
+    "typeof-compare": true,
     "use-isnan": true,
 
     // Maintainability
@@ -101,6 +103,7 @@
     "comment-format": [true, "check-space"],
     "completed-docs": [false],
     "file-header": [false],
+    "import-spacing": true,
     "interface-name": [true, "never-prefix"],
     "interface-over-type-literal": true,
     "jsdoc-format": true,
@@ -124,6 +127,13 @@
     }],
     "quotemark": [true, "single", "avoid-escape", "jsx-double"],
     "semicolon": [true, "always"],
+    "space-before-function-paren": [true, {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always",
+      "method": "never",
+      "constructor": "never"
+    }],
     "variable-name": [true, "ban-keywords"],
     "whitespace": [true,
       "check-branch",
