@@ -36,7 +36,7 @@
     "typescript": "2.1.4"
   },
   "peerDependencies": {
-    "tslint": "4.3.x",
+    "tslint": "~4.4.0",
     "typescript": "2.1.x"
   }
 }
