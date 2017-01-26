@@ -27,16 +27,16 @@
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {
-    "commitizen": "2.9.4",
+    "commitizen": "2.9.5",
     "conventional-changelog-lint": "1.1.0",
     "cz-customizable": "4.0.0",
-    "husky": "0.12.0",
+    "husky": "0.13.1",
     "standard-version": "4.0.0",
-    "tslint": "4.3.1",
-    "typescript": "2.1.4"
+    "tslint": "4.4.2",
+    "typescript": "2.1.5"
   },
   "peerDependencies": {
-    "tslint": "4.3.x",
+    "tslint": "4.4.x",
     "typescript": "2.1.x"
   }
 }

@@ -2,10 +2,15 @@
   "extends": "./tslint.json",
   "rules": {
     "promise-function-async": true,
+    "await-promise": true,
     "no-for-in-array": true,
     "no-inferred-empty-object-type": true,
+    "no-unbound-method": true,
+    "no-unsafe-any": true,
     "no-void-expression": true,
     "restrict-plus-operands": true,
-    "strict-boolean-expressions": true
+    "strict-boolean-expressions": [true, "allow-null-union", "allow-undefined-union", "allow-string", "allow-number"],
+    "strict-type-predicates": true,
+    "no-unnecessary-qualifier": true
   }
 }
