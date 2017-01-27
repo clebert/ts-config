@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/clebert/ts-config/compare/v0.9.0...v1.0.0) (2017-01-27)
+
+
+### Bug Fixes
+
+* move rules that require type info to tslint-type-info.json ([8ffedc3](https://github.com/clebert/ts-config/commit/8ffedc3))
+
+### Features
+
+* rename tslint-type-info.json to tslint-type-check.json ([4f78204](https://github.com/clebert/ts-config/commit/4f78204))
+
+
+### BREAKING CHANGES
+
+* rename tslint-type-info.json to tslint-type-check.json
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/clebert/ts-config/compare/v0.8.0...v0.9.0) (2017-01-27)
 
