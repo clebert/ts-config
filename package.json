@@ -1,6 +1,6 @@
 {
   "name": "ts-config",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Extendable TSLint and TypeScript configs",
   "license": "MIT",
   "author": "Clemens Akens <clebert@me.com>",
