@@ -24,8 +24,8 @@
     "test": "npm run test:tslint && npm run test:tslint-rules && npm run test:tslint-type-check && npm run test:tslint-type-check-rules && npm run test:typescript",
     "test:tslint": "tslint --config tslint.json --project tsconfig.json",
     "test:tslint-rules": "! tslint --config tslint.json --project tsconfig.json 2>&1 | grep -q 'Could not find implementations'",
-    "test:tslint-type-check": "tslint --config tslint-type-info.json --project tsconfig.json --type-check",
-    "test:tslint-type-check-rules": "! tslint --config tslint-type-info.json --project tsconfig.json --type-check 2>&1 | grep -q 'Could not find implementations'",
+    "test:tslint-type-check": "tslint --config tslint-type-check.json --project tsconfig.json --type-check",
+    "test:tslint-type-check-rules": "! tslint --config tslint-type-check.json --project tsconfig.json --type-check 2>&1 | grep -q 'Could not find implementations'",
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {

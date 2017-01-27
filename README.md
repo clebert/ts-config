@@ -26,7 +26,7 @@ or when running tslint with type-checking on:
 
 ```json
 {
-  "extends": "./node_modules/ts-config/tslint-type-info.json"
+  "extends": "./node_modules/ts-config/tslint-type-check.json"
 }
 ```
 
