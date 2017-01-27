@@ -53,7 +53,7 @@
     "no-duplicate-variable": true,
     "no-empty": true,
     "no-eval": true,
-    "no-floating-promises": [true],
+    // "no-floating-promises": [true], // This rule requires type info to run
     // "no-for-in-array": true, // This rule requires type info to run
     // "no-inferred-empty-object-type": true, // This rule requires type info to run
     "no-invalid-this": [true, "check-function-in-method"],
@@ -116,7 +116,7 @@
     "jsdoc-format": true,
     "new-parens": true,
     "no-angle-bracket-type-assertion": true,
-    "no-boolean-literal-compare": true,
+    // "no-boolean-literal-compare": true, // This rule requires type info to run
     "no-consecutive-blank-lines": [true],
     "no-parameter-properties": true,
     "no-unnecessary-initializer": true,

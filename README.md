@@ -22,7 +22,7 @@ Add a `tslint.json` file to your projects root directory with the contents below
 }
 ```
 
-or when running tslint with type info:
+or when running tslint with type-checking on:
 
 ```json
 {
