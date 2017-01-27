@@ -22,8 +22,8 @@
     "prerelease": "npm prune && npm install && npm test",
     "release": "standard-version",
     "test": "npm run test:tslint && npm run test:tslint-rules && npm run test:typescript",
-    "test:tslint": "tslint --config ./tslint-type-info.json --project . --type-check",
-    "test:tslint-rules": "! tslint --config ./tslint-type-info.json --project . --type-check 2>&1 | grep -q 'Could not find implementations'",
+    "test:tslint": "tslint --config tslint-type-info.json --project tsconfig.json --type-check",
+    "test:tslint-rules": "! tslint --config tslint-type-info.json --project tsconfig.json --type-check 2>&1 | grep -q 'Could not find implementations'",
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {
@@ -32,10 +32,12 @@
     "cz-customizable": "4.0.0",
     "husky": "0.13.1",
     "standard-version": "4.0.0",
+    "tslib": "1.5.0",
     "tslint": "4.4.2",
     "typescript": "2.1.5"
   },
   "peerDependencies": {
+    "tslib": "1.5.x",
     "tslint": "4.4.x",
     "typescript": "2.1.x"
   }
