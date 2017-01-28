@@ -92,7 +92,7 @@
     "max-line-length": [true, 120],
     "no-default-export": true,
     "no-mergeable-namespace": true,
-    "no-require-imports": true,
+    "no-require-imports": false,
     "no-trailing-whitespace": true,
     "object-literal-sort-keys": false,
     "prefer-const": true,
