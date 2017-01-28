@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/clebert/ts-config/compare/v1.0.0...v1.1.0) (2017-01-28)
+
+
+### Features
+
+* deactivate tslint rule "no-require-imports" ([e37a364](https://github.com/clebert/ts-config/commit/e37a364))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/clebert/ts-config/compare/v0.9.0...v1.0.0) (2017-01-27)
 
