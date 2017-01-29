@@ -64,7 +64,7 @@
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
     // "no-unbound-method": true, // This rule requires type info to run
-    // "no-unsafe-any": true, // This rule requires type info to run
+    // "no-unsafe-any": false, // This rule requires type info to run
     "no-unsafe-finally": true,
     "no-unused-expression": [true, "allow-fast-null-checks"],
     "no-unused-new": true,
@@ -73,7 +73,7 @@
     // "no-void-expression": true, // This rule requires type info to run
     "radix": true,
     // "restrict-plus-operands": true, // This rule requires type info to run
-    // "strict-boolean-expressions": [true, "allow-null-union", "allow-undefined-union", "allow-string", "allow-number"], // This rule requires type info to run
+    // "strict-boolean-expressions": [false, "allow-null-union", "allow-undefined-union", "allow-string", "allow-number"], // This rule requires type info to run
     // "strict-type-predicates": true, // This rule requires type info to run
     "switch-default": false,
     "triple-equals": [true, "allow-null-check"],
