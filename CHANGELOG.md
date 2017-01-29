@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/clebert/ts-config/compare/v1.1.0...v1.2.0) (2017-01-29)
+
+
+### Features
+
+* deactivate tslint rules: no-unsafe-any, strict-boolean-expressions ([ae3396b](https://github.com/clebert/ts-config/commit/ae3396b))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/clebert/ts-config/compare/v1.0.0...v1.1.0) (2017-01-28)
 
