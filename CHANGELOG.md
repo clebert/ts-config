@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/clebert/ts-config/compare/v1.3.0...v1.4.0) (2017-02-28)
+
+
+### Features
+
+* update tslint to version 4.5.0 and add new rules ([489e624](https://github.com/clebert/ts-config/commit/489e624))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/clebert/ts-config/compare/v1.2.0...v1.3.0) (2017-02-22)
 
