@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/clebert/ts-config/compare/v1.4.0...v2.0.0) (2017-02-28)
+
+
+### Features
+
+* activate tslint rule “no-non-null-assertion” ([5c6d502](https://github.com/clebert/ts-config/commit/5c6d502))
+
+
+### BREAKING CHANGES
+
+* no-non-null-assertion is now true
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/clebert/ts-config/compare/v1.3.0...v1.4.0) (2017-02-28)
 
