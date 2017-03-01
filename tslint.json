@@ -7,7 +7,14 @@
     // These rules find errors related to TypeScript features:
 
     "adjacent-overload-signatures": true,
-    "ban-types": [false],
+    "ban-types": [true,
+      ["Object", "Avoid using the `Object` type. Did you mean `object`?"],
+      ["Function", "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."],
+      ["Boolean", "Avoid using the `Boolean` type. Did you mean `boolean`?"],
+      ["Number", "Avoid using the `Number` type. Did you mean `number`?"],
+      ["String", "Avoid using the `String` type. Did you mean `string`?"],
+      ["Symbol", "Avoid using the `Symbol` type. Did you mean `symbol`?"]
+    ],
     "member-access": [true, "check-accessor", "check-constructor"],
     "member-ordering": [true, {"order": "statics-first"}],
     "no-any": true,
@@ -22,7 +29,7 @@
     "no-var-requires": true,
     "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
     "prefer-for-of": true,
-    // "promise-function-async": true, // This rule requires type info to run
+    "promise-function-async": true, // This rule requires type info to run
     "typedef": [true,
       "call-signature",
       "parameter",
@@ -41,7 +48,7 @@
     // Functionality
     // These rules catch common errors in JS programming or otherwise confusing constructs that are prone to producing bugs:
 
-    // "await-promise": true, // This rule requires type info to run
+    "await-promise": true, // This rule requires type info to run
     "ban": false,
     "curly": true,
     "forin": true,
@@ -57,9 +64,9 @@
     "no-duplicate-variable": true,
     "no-empty": true,
     "no-eval": true,
-    // "no-floating-promises": [true], // This rule requires type info to run
-    // "no-for-in-array": true, // This rule requires type info to run
-    // "no-inferred-empty-object-type": true, // This rule requires type info to run
+    "no-floating-promises": [true], // This rule requires type info to run
+    "no-for-in-array": true, // This rule requires type info to run
+    "no-inferred-empty-object-type": true, // This rule requires type info to run
     "no-invalid-this": [true, "check-function-in-method"],
     "no-misused-new": true,
     "no-null-keyword": false,
@@ -67,18 +74,18 @@
     "no-string-literal": false,
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
-    // "no-unbound-method": true, // This rule requires type info to run
-    // "no-unsafe-any": false, // This rule requires type info to run
+    "no-unbound-method": true, // This rule requires type info to run
+    "no-unsafe-any": false, // This rule requires type info to run
     "no-unsafe-finally": true,
     "no-unused-expression": [true, "allow-fast-null-checks"],
     "no-unused-new": true,
     "no-use-before-declare": true,
     "no-var-keyword": true,
-    // "no-void-expression": true, // This rule requires type info to run
+    "no-void-expression": true, // This rule requires type info to run
     "radix": true,
-    // "restrict-plus-operands": true, // This rule requires type info to run
-    // "strict-boolean-expressions": [false, "allow-null-union", "allow-undefined-union", "allow-string", "allow-number"], // This rule requires type info to run
-    // "strict-type-predicates": true, // This rule requires type info to run
+    "restrict-plus-operands": true, // This rule requires type info to run
+    "strict-boolean-expressions": [false, "allow-null-union", "allow-undefined-union", "allow-string", "allow-number"], // This rule requires type info to run
+    "strict-type-predicates": true, // This rule requires type info to run
     "switch-default": false,
     "triple-equals": [true, "allow-null-check"],
     "typeof-compare": true,
@@ -118,15 +125,15 @@
     "interface-name": [true, "never-prefix"],
     "interface-over-type-literal": true,
     "jsdoc-format": true,
-    // "match-default-export-name": true, // This rule requires type info to run
+    "match-default-export-name": true, // This rule requires type info to run
     "newline-before-return": true,
     "new-parens": true,
     "no-angle-bracket-type-assertion": true,
-    // "no-boolean-literal-compare": true, // This rule requires type info to run
+    "no-boolean-literal-compare": true, // This rule requires type info to run
     "no-consecutive-blank-lines": [true],
     "no-parameter-properties": true,
     "no-unnecessary-initializer": true,
-    // "no-unnecessary-qualifier": true, // This rule requires type info to run
+    "no-unnecessary-qualifier": true, // This rule requires type info to run
     "object-literal-key-quotes": [true, "consistent-as-needed"],
     "object-literal-shorthand": true,
     "one-line": [true,

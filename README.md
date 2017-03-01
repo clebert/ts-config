@@ -22,14 +22,6 @@ Add a `tslint.json` file to your projects root directory with the contents below
 }
 ```
 
-or when running tslint with type-checking on:
-
-```json
-{
-  "extends": "./node_modules/ts-config/tslint-type-check.json"
-}
-```
-
 Add a `tsconfig.json` file to your projects root directory with the contents below:
 
 ```json
