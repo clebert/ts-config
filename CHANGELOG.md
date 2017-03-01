@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/clebert/ts-config/compare/v2.0.0...v3.0.0) (2017-03-01)
+
+
+### Features
+
+* update tslint to version 4.5.1 ([4334b1b](https://github.com/clebert/ts-config/commit/4334b1b))
+
+
+### BREAKING CHANGES
+
+* add rules that require type info to tslint.json and remove tslint-type-check.json
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/clebert/ts-config/compare/v1.4.0...v2.0.0) (2017-02-28)
 
