@@ -35,6 +35,9 @@ Add a `tsconfig.json` file to your projects root directory with the contents bel
 }
 ```
 
+If you intend to use ts-config with React extend `./node_modules/ts-config/tsconfig-react.json`
+instead.
+
 ## Development
 
 ### Installing the dev dependencies
