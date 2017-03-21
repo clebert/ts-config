@@ -4,3 +4,6 @@ npm-debug.log*
 test.d.ts
 test.js
 test.js.map
+test-react.d.ts
+test-react.js
+test-react.js.map
