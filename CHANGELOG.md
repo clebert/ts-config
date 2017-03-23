@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/clebert/ts-config/compare/v3.0.0...v3.1.0) (2017-03-23)
+
+
+### Features
+
+* set tslint rule “max-line-length” to 80 ([1a27280](https://github.com/clebert/ts-config/commit/1a27280))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/clebert/ts-config/compare/v2.0.0...v3.0.0) (2017-03-01)
 
