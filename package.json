@@ -30,9 +30,9 @@
   },
   "devDependencies": {
     "commitizen": "2.9.6",
-    "conventional-changelog-lint": "1.1.0",
+    "conventional-changelog-lint": "1.1.7",
     "cz-customizable": "4.0.0",
-    "husky": "0.13.1",
+    "husky": "0.13.2",
     "standard-version": "4.0.0",
     "tslib": "1.6.0",
     "tslint": "4.5.1",
