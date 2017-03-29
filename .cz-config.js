@@ -2,6 +2,8 @@
 
 module.exports = {
   allowBreakingChanges: ['feat'],
+  allowCustomScopes: false,
+  scopes: [''],
   types: [
     {value: 'feat',     name: 'feat:     A new feature'},
     {value: 'fix',      name: 'fix:      A bug fix'},

@@ -1,20 +1,24 @@
 # ts-config
 
 [![npm][0]][1]
-[![Build Status][2]][3]
-[![Commitizen friendly][4]][5]
+[![build][2]][3]
+[![semantic-release][4]][5]
+[![Greenkeeper][6]][7]
+[![TypeScript][8]][9]
 
-Extendable [TSLint][6] and [TypeScript][7] configs.
+Extendable [TSLint][10] and [TypeScript][9] configs.
 
 ## Installation
 
 ```sh
-npm install --save-dev --save-exact ts-config
+npm install --save-dev ts-config
 ```
 
 ## Usage
 
-Add a `tslint.json` file to your projects root directory with the contents below:
+Add the following config files to your projects root directory:
+
+*tslint.json*
 
 ```json
 {
@@ -22,28 +26,28 @@ Add a `tslint.json` file to your projects root directory with the contents below
 }
 ```
 
-Add a `tsconfig.json` file to your projects root directory with the contents below:
+*tsconfig.json*
 
 ```json
 {
   "extends": "./node_modules/ts-config/tsconfig.json",
   "compilerOptions": {
-    "outDir": "lib",
+    "outDir": "dist",
     "rootDir": "src"
   },
-  "exclude": ["lib", "node_modules"]
+  "exclude": ["dist", "node_modules"]
 }
 ```
 
 ## Development
 
-### Installing the dev dependencies
+### Installing dev dependencies
 
 ```sh
 npm install
 ```
 
-### Running the tests
+### Running tests
 
 ```sh
 npm test
@@ -55,20 +59,6 @@ npm test
 npm run cz
 ```
 
-### Publishing a new version
-
-```sh
-npm run release
-```
-
-```sh
-git push --follow-tags origin master
-```
-
-```sh
-npm publish
-```
-
 ---
 Built by (c) Clemens Akens. Released under the MIT license.
 
@@ -76,7 +66,10 @@ Built by (c) Clemens Akens. Released under the MIT license.
 [1]: https://www.npmjs.com/package/ts-config
 [2]: https://travis-ci.org/clebert/ts-config.svg?branch=master
 [3]: https://travis-ci.org/clebert/ts-config
-[4]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[5]: http://commitizen.github.io/cz-cli/
-[6]: https://github.com/palantir/tslint
-[7]: https://github.com/Microsoft/TypeScript
+[4]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[5]: https://github.com/semantic-release/semantic-release
+[6]: https://badges.greenkeeper.io/clebert/ts-config.svg
+[7]: https://greenkeeper.io/
+[8]: https://img.shields.io/badge/TypeScript-friendly-blue.svg
+[9]: http://www.typescriptlang.org/
+[10]: https://github.com/palantir/tslint
