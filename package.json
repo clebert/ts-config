@@ -20,7 +20,7 @@
     "commitmsg": "conventional-changelog-lint --edit",
     "cz": "git-cz",
     "release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "npm run test:tslint && npm run test:tslint-rules && npm run test:tslint-type-check && npm run test:tslint-type-check-rules && npm run test:typescript",
+    "test": "conventional-changelog-lint --from=HEAD~1 && npm run test:tslint && npm run test:tslint-rules && npm run test:tslint-type-check && npm run test:tslint-type-check-rules && npm run test:typescript",
     "test:tslint": "tslint --config tslint.json test.ts",
     "test:tslint-rules": "! tslint --config tslint.json test.ts 2>&1 | grep -q 'Could not find implementations'",
     "test:tslint-type-check": "tslint --config tslint.json --project tsconfig.json --type-check test.ts",
