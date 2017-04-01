@@ -21,10 +21,10 @@
     "cz": "git-cz",
     "release": "semantic-release pre && npm publish && semantic-release post",
     "test": "npm run test:tslint && npm run test:tslint-rules && npm run test:tslint-type-check && npm run test:tslint-type-check-rules && npm run test:typescript",
-    "test:tslint": "tslint --config tslint.json --project tsconfig.json",
-    "test:tslint-rules": "! tslint --config tslint.json --project tsconfig.json 2>&1 | grep -q 'Could not find implementations'",
-    "test:tslint-type-check": "tslint --config tslint.json --project tsconfig.json --type-check",
-    "test:tslint-type-check-rules": "! tslint --config tslint.json --project tsconfig.json --type-check 2>&1 | grep -q 'Could not find implementations'",
+    "test:tslint": "tslint --config tslint.json test.ts",
+    "test:tslint-rules": "! tslint --config tslint.json test.ts 2>&1 | grep -q 'Could not find implementations'",
+    "test:tslint-type-check": "tslint --config tslint.json --project tsconfig.json --type-check test.ts",
+    "test:tslint-type-check-rules": "! tslint --config tslint.json --project tsconfig.json --type-check test.ts 2>&1 | grep -q 'Could not find implementations'",
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {
@@ -34,12 +34,12 @@
     "husky": "0.13.3",
     "semantic-release": "6.3.2",
     "tslib": "1.6.0",
-    "tslint": "4.5.1",
+    "tslint": "5.0.0",
     "typescript": "2.2.2"
   },
   "peerDependencies": {
     "tslib": "1.6.x",
-    "tslint": "4.5.x",
+    "tslint": "5.0.x",
     "typescript": "2.2.x"
   }
 }

@@ -78,13 +78,12 @@
     "no-unsafe-any": false, // This rule requires type info to run
     "no-unsafe-finally": true,
     "no-unused-expression": [true, "allow-fast-null-checks"],
-    "no-unused-new": true,
     "no-unused-variable": [false],
-    "no-use-before-declare": true,
+    "no-use-before-declare": false,
     "no-var-keyword": true,
     "no-void-expression": true, // This rule requires type info to run
     "radix": true,
-    "restrict-plus-operands": true, // This rule requires type info to run
+    "restrict-plus-operands": false, // This rule requires type info to run
     "strict-boolean-expressions": [false, "allow-null-union", "allow-undefined-union", "allow-string", "allow-number"], // This rule requires type info to run
     "strict-type-predicates": true, // This rule requires type info to run
     "switch-default": false,
@@ -106,7 +105,7 @@
     "no-mergeable-namespace": true,
     "no-require-imports": false,
     "object-literal-sort-keys": false,
-    "prefer-const": true,
+    "prefer-const": [true, {"destructuring": "any"}],
     "trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
 
     // Style
@@ -132,7 +131,9 @@
     "no-boolean-literal-compare": true, // This rule requires type info to run
     "no-consecutive-blank-lines": [true],
     "no-parameter-properties": true,
+    "no-reference-import": true,
     "no-trailing-whitespace": [true],
+    "no-unnecessary-callback-wrapper": true,
     "no-unnecessary-initializer": true,
     "no-unnecessary-qualifier": true, // This rule requires type info to run
     "object-literal-key-quotes": [true, "consistent-as-needed"],
@@ -151,7 +152,9 @@
     }],
     "prefer-function-over-method": [true, "allow-public", "allow-protected"],
     "prefer-method-signature": true,
+    "prefer-template": [true, "allow-single-concat"],
     "quotemark": [true, "single", "avoid-escape", "jsx-double"],
+    "return-undefined": false, // This rule requires type info to run
     "semicolon": [true, "always"],
     "space-before-function-paren": [true, {
       "anonymous": "always",
