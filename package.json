@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "commitizen": "2.9.6",
-    "conventional-changelog-lint": "1.1.8",
+    "conventional-changelog-lint": "1.1.9",
     "cz-customizable": "5.0.0",
     "husky": "0.13.3",
     "semantic-release": "6.3.2",
