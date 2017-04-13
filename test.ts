@@ -2,10 +2,13 @@ export class Test {
   public prop: string = 'foo';
 }
 
-export async function test(): Promise<void> {
-  return;
-}
-
 const { prop } = new Test();
 
 export { prop };
+
+export const foo = undefined;
+export const bar = true;
+
+export async function test(): Promise<boolean> {
+  return bar === true;
+}

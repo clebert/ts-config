@@ -34,12 +34,12 @@
     "husky": "0.13.3",
     "semantic-release": "6.3.2",
     "tslib": "1.6.0",
-    "tslint": "5.0.0",
+    "tslint": "5.1.0",
     "typescript": "2.2.2"
   },
   "peerDependencies": {
     "tslib": "1.6.x",
-    "tslint": "5.0.x",
+    "tslint": "5.1.x",
     "typescript": "2.2.x"
   }
 }

@@ -67,10 +67,12 @@
     "no-floating-promises": [true], // This rule requires type info to run
     "no-for-in-array": true, // This rule requires type info to run
     "no-inferred-empty-object-type": true, // This rule requires type info to run
+    "no-invalid-template-strings": true,
     "no-invalid-this": [true, "check-function-in-method"],
     "no-misused-new": true,
     "no-null-keyword": false,
     "no-shadowed-variable": true,
+    "no-sparse-arrays": true,
     "no-string-literal": false,
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
@@ -79,11 +81,11 @@
     "no-unsafe-finally": true,
     "no-unused-expression": [true, "allow-fast-null-checks"],
     "no-unused-variable": [false],
-    "no-use-before-declare": false,
+    "no-use-before-declare": true,
     "no-var-keyword": true,
-    "no-void-expression": true, // This rule requires type info to run
+    "no-void-expression": [true, "ignore-arrow-function-shorthand"], // This rule requires type info to run
     "radix": true,
-    "restrict-plus-operands": false, // This rule requires type info to run
+    "restrict-plus-operands": true, // This rule requires type info to run
     "strict-boolean-expressions": [false, "allow-null-union", "allow-undefined-union", "allow-string", "allow-number"], // This rule requires type info to run
     "strict-type-predicates": true, // This rule requires type info to run
     "switch-default": false,
