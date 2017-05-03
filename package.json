@@ -39,7 +39,7 @@
   },
   "peerDependencies": {
     "tslib": "1.6.x",
-    "tslint": "5.1.x",
+    "tslint": "~5.2.0",
     "typescript": "2.3.x"
   }
 }
