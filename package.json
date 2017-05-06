@@ -32,7 +32,7 @@
     "conventional-changelog-lint": "1.1.9",
     "cz-customizable": "5.0.0",
     "husky": "0.13.3",
-    "semantic-release": "6.3.2",
+    "semantic-release": "6.3.6",
     "tslib": "1.6.1",
     "tslint": "5.1.0",
     "typescript": "2.3.2"
