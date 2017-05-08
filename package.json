@@ -33,13 +33,13 @@
     "cz-customizable": "5.0.0",
     "husky": "0.13.3",
     "semantic-release": "6.3.6",
-    "tslib": "1.6.1",
-    "tslint": "5.1.0",
+    "tslib": "1.7.0",
+    "tslint": "5.2.0",
     "typescript": "2.3.2"
   },
   "peerDependencies": {
-    "tslib": "1.6.x",
-    "tslint": "5.1.x",
+    "tslib": "1.7.x",
+    "tslint": "5.2.x",
     "typescript": "2.3.x"
   }
 }

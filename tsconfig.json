@@ -55,6 +55,6 @@
     "forceConsistentCasingInFileNames": true, /* Disallow inconsistently-cased references to the same file. */
     "pretty": true,                           /* Stylize errors and messages using color and context. */
     // "jsxFactory": "React.createElement",   /* Specify the JSX factory function to use when targeting react JSX emit, e.g. React.createElement or h. */
-    "noEmitOnError": true                     /* Do not emit outputs if any errors were reported. */
+    "noEmitOnError": false                    /* Do not emit outputs if any errors were reported. */
   }
 }
