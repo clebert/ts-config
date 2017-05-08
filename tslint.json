@@ -26,6 +26,7 @@
     "no-namespace": [true, "allow-declarations"],
     "no-non-null-assertion": true,
     "no-reference": true,
+    "no-unnecessary-type-assertion": true, // This rule requires type info to run
     "no-var-requires": true,
     "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
     "prefer-for-of": true,
@@ -71,6 +72,7 @@
     "no-invalid-this": [true, "check-function-in-method"],
     "no-misused-new": true,
     "no-null-keyword": false,
+    "no-object-literal-type-assertion": true,
     "no-shadowed-variable": true,
     "no-sparse-arrays": true,
     "no-string-literal": false,
@@ -97,6 +99,7 @@
     // These rules make code maintenance easier:
 
     "cyclomatic-complexity": [true],
+    "deprecation": true, // This rule requires type info to run
     "eofline": true,
     "indent": [true, "spaces"],
     "linebreak-style": [true, "LF"],
@@ -113,7 +116,13 @@
     // Style
     // These rules enforce consistent style across your codebase:
 
-    "align": [true, "statements"],
+    "align": [true,
+      "arguments",
+      "elements",
+      "members",
+      "parameters",
+      "statements"
+    ],
     "array-type": [true, "array"],
     "arrow-parens": [true, "ban-single-arg-parens"],
     "arrow-return-shorthand": [true, "multiline"],
@@ -132,12 +141,14 @@
     "no-angle-bracket-type-assertion": true,
     "no-boolean-literal-compare": true, // This rule requires type info to run
     "no-consecutive-blank-lines": [true],
+    "no-irregular-whitespace": true,
     "no-parameter-properties": true,
     "no-reference-import": true,
     "no-trailing-whitespace": [true],
     "no-unnecessary-callback-wrapper": true,
     "no-unnecessary-initializer": true,
     "no-unnecessary-qualifier": true, // This rule requires type info to run
+    "number-literal-format": true,
     "object-literal-key-quotes": [true, "consistent-as-needed"],
     "object-literal-shorthand": true,
     "one-line": [true,
@@ -154,6 +165,7 @@
     }],
     "prefer-function-over-method": [true, "allow-public", "allow-protected"],
     "prefer-method-signature": true,
+    "prefer-switch": ["false"],
     "prefer-template": [true, "allow-single-concat"],
     "quotemark": [true, "single", "avoid-escape", "jsx-double"],
     "return-undefined": false, // This rule requires type info to run
