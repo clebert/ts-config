@@ -17,7 +17,6 @@
     }
   },
   "scripts": {
-    "commitmsg": "conventional-changelog-lint --edit",
     "cz": "git-cz",
     "release": "semantic-release pre && npm publish && semantic-release post",
     "test": "conventional-changelog-lint --from=HEAD~1 && npm run test:tslint && npm run test:tslint-rules && npm run test:tslint-type-check && npm run test:tslint-type-check-rules && npm run test:typescript",
@@ -31,7 +30,6 @@
     "commitizen": "2.9.6",
     "conventional-changelog-lint": "1.1.9",
     "cz-customizable": "5.0.0",
-    "husky": "0.13.3",
     "semantic-release": "6.3.6",
     "tslib": "1.7.1",
     "tslint": "5.2.0",
