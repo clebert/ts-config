@@ -1,15 +1,12 @@
 {
   "extends": ["angular"],
   "rules": {
-    "header-max-length": [0],
-    "scope-empty": [2,
-      "never"
-    ],
-    "scope-enum": [2,
+    "header-max-length": [1,
       "always",
-      [
-        "package"
-      ]
+      72
+    ],
+    "scope-empty": [1,
+      "always"
     ],
     "type-enum": [2,
       "always",
@@ -23,7 +20,7 @@
         "test",
         "chore",
         "revert",
-        "WIP"
+        "wip"
       ]
     ]
   }
