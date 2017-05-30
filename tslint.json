@@ -183,7 +183,6 @@
     "space-before-function-paren": [true, {
       "anonymous": "always",
       "named": "never",
-      "asyncArrow": "always",
       "method": "never",
       "constructor": "never"
     }],
