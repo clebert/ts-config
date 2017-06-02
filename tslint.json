@@ -51,7 +51,7 @@
 
     "await-promise": [true], // This rule requires type info to run
     "ban": false,
-    "curly": [true, "as-needed"],
+    "curly": [true],
     "forin": true,
     "import-blacklist": true,
     "label-position": true,
