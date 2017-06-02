@@ -51,7 +51,7 @@
 
     "await-promise": [true], // This rule requires type info to run
     "ban": false,
-    "curly": true,
+    "curly": [true, "as-needed"],
     "forin": true,
     "import-blacklist": true,
     "label-position": true,
@@ -62,7 +62,7 @@
     "no-construct": true,
     "no-debugger": true,
     "no-duplicate-super": true,
-    "no-duplicate-variable": true,
+    "no-duplicate-variable": [true, "check-parameters"],
     "no-empty": true,
     "no-eval": true,
     "no-floating-promises": [true], // This rule requires type info to run
@@ -78,7 +78,7 @@
     "no-string-literal": false,
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
-    "no-unbound-method": true, // This rule requires type info to run
+    "no-unbound-method": [true, "ignore-static"], // This rule requires type info to run
     "no-unsafe-any": false, // This rule requires type info to run
     "no-unsafe-finally": true,
     "no-unused-expression": [true, "allow-fast-null-checks"],
@@ -87,13 +87,20 @@
     "no-var-keyword": true,
     "no-void-expression": [true, "ignore-arrow-function-shorthand"], // This rule requires type info to run
     "prefer-conditional-expression": true,
+    "prefer-object-spread": true,
     "radix": true,
     "restrict-plus-operands": true, // This rule requires type info to run
-    "strict-boolean-expressions": [false, "allow-null-union", "allow-undefined-union", "allow-string", "allow-number"], // This rule requires type info to run
+    "strict-boolean-expressions": [false, // This rule requires type info to run
+      "allow-null-union",
+      "allow-undefined-union",
+      "allow-string",
+      "allow-number"
+    ],
     "strict-type-predicates": true, // This rule requires type info to run
     "switch-default": false,
     "triple-equals": [true, "allow-null-check"],
     "typeof-compare": true,
+    "use-default-type-parameter": true, // This rule requires type info to run
     "use-isnan": true,
 
     // Maintainability
@@ -101,7 +108,6 @@
 
     "cyclomatic-complexity": [true],
     "deprecation": true, // This rule requires type info to run
-    "encoding": true,
     "eofline": true,
     "indent": [true, "spaces", 2],
     "linebreak-style": [true, "LF"],
@@ -128,10 +134,12 @@
     "array-type": [true, "array"],
     "arrow-parens": [true, "ban-single-arg-parens"],
     "arrow-return-shorthand": [true, "multiline"],
+    "binary-expression-operand-order": true,
     "callable-types": true,
     "class-name": true,
     "comment-format": [true, "check-space"],
     "completed-docs": [false],
+    "encoding": true,
     "file-header": [false],
     "import-spacing": true,
     "interface-name": [true, "never-prefix"],
@@ -167,7 +175,6 @@
     }],
     "prefer-function-over-method": [true, "allow-public", "allow-protected"],
     "prefer-method-signature": true,
-    "prefer-object-spread": true,
     "prefer-switch": [true, {
       "min-cases": 3
     }],
@@ -183,9 +190,12 @@
     "space-before-function-paren": [true, {
       "anonymous": "always",
       "named": "never",
+      "asyncArrow": "always",
       "method": "never",
       "constructor": "never"
     }],
+    "switch-final-break": true,
+    "type-literal-delimiter": true,
     "variable-name": [true, "ban-keywords"],
     "whitespace": [true,
       "check-branch",
