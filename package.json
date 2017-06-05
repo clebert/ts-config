@@ -18,6 +18,7 @@
   },
   "scripts": {
     "cz": "git-cz",
+    "prepublishOnly": "./scripts/prepublish.js",
     "release": "semantic-release pre && npm publish && semantic-release post",
     "test": "conventional-changelog-lint --from=HEAD~1 && npm run test:tslint && npm run test:tslint-rules && npm run test:tslint-type-check && npm run test:tslint-type-check-rules && npm run test:typescript",
     "test:tslint": "tslint --config tslint.json test.ts",
@@ -39,5 +40,8 @@
     "tslib": "1.7.x",
     "tslint": "5.4.x",
     "typescript": "2.3.x"
+  },
+  "dependencies": {
+    "comment-json": "1.1.3"
   }
 }
