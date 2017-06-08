@@ -125,7 +125,6 @@
     // These rules enforce consistent style across your codebase:
 
     "align": [true,
-      "arguments",
       "elements",
       "members",
       "parameters",
