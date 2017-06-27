@@ -39,7 +39,7 @@
   "peerDependencies": {
     "tslib": "1.7.x",
     "tslint": "5.4.x",
-    "typescript": "2.3.x"
+    "typescript": "~2.4.1"
   },
   "dependencies": {
     "comment-json": "1.1.3"
