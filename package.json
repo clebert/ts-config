@@ -34,12 +34,12 @@
     "semantic-release": "6.3.6",
     "tslib": "1.7.1",
     "tslint": "5.4.3",
-    "typescript": "2.3.4"
+    "typescript": "2.4.1"
   },
   "peerDependencies": {
     "tslib": "1.7.x",
     "tslint": "5.4.x",
-    "typescript": "2.3.x"
+    "typescript": "2.4.x"
   },
   "dependencies": {
     "comment-json": "1.1.3"
