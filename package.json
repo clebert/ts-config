@@ -33,12 +33,12 @@
     "cz-customizable": "5.0.0",
     "semantic-release": "6.3.6",
     "tslib": "1.7.1",
-    "tslint": "5.4.3",
+    "tslint": "5.5.0",
     "typescript": "2.4.1"
   },
   "peerDependencies": {
     "tslib": "1.7.x",
-    "tslint": "5.4.x",
+    "tslint": "5.5.x",
     "typescript": "2.4.x"
   },
   "dependencies": {
