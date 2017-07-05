@@ -78,6 +78,7 @@
     "no-string-literal": false,
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
+    "no-this-assignment": [true, {"allow-destructuring": true}],
     "no-unbound-method": [true, "ignore-static"], // This rule requires type info to run
     "no-unsafe-any": false, // This rule requires type info to run
     "no-unsafe-finally": true,
@@ -117,7 +118,7 @@
     "no-default-export": true,
     "no-mergeable-namespace": true,
     "no-require-imports": false,
-    "object-literal-sort-keys": [false, "ignore-case"],
+    "object-literal-sort-keys": [true],
     "prefer-const": [true, {"destructuring": "any"}],
     "trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
 
@@ -158,7 +159,7 @@
     "no-unnecessary-initializer": true,
     "no-unnecessary-qualifier": true, // This rule requires type info to run
     "number-literal-format": true,
-    "object-literal-key-quotes": [true, "consistent-as-needed"],
+    "object-literal-key-quotes": [true, "as-needed"],
     "object-literal-shorthand": true,
     "one-line": [true,
       "check-catch",
