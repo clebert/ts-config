@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "commitizen": "2.9.6",
-    "conventional-changelog-lint": "1.1.9",
+    "conventional-changelog-lint": "2.0.0",
     "cz-customizable": "5.0.0",
     "semantic-release": "6.3.6",
     "tslib": "1.7.1",
