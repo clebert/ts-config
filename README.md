@@ -18,7 +18,7 @@ npm install --save-dev ts-config
 
 Add the following config files to your projects root directory:
 
-*tslint.json*
+### tslint.json
 
 ```json
 {
@@ -26,7 +26,7 @@ Add the following config files to your projects root directory:
 }
 ```
 
-*tsconfig.json*
+### tsconfig.json
 
 ```json
 {
@@ -51,12 +51,6 @@ npm install
 
 ```sh
 npm test
-```
-
-### Committing a new change
-
-```sh
-npm run cz
 ```
 
 ---

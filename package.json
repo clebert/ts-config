@@ -8,19 +8,10 @@
     "type": "git",
     "url": "https://github.com/clebert/ts-config.git"
   },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": ".cz-config.js"
-    }
-  },
   "scripts": {
-    "cz": "git-cz",
     "prepublishOnly": "./scripts/prepublish.js",
     "release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "conventional-changelog-lint --from=HEAD~1 && npm run test:tslint && npm run test:tslint-rules && npm run test:tslint-type-check && npm run test:tslint-type-check-rules && npm run test:typescript",
+    "test": "npm run test:tslint && npm run test:tslint-rules && npm run test:tslint-type-check && npm run test:tslint-type-check-rules && npm run test:typescript",
     "test:tslint": "tslint --config tslint.json test.ts",
     "test:tslint-rules": "! tslint --config tslint.json test.ts 2>&1 | grep -q 'Could not find implementations'",
     "test:tslint-type-check": "tslint --config tslint.json --project tsconfig.json --type-check test.ts",
@@ -28,13 +19,10 @@
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {
-    "commitizen": "2.9.6",
-    "conventional-changelog-lint": "1.1.9",
-    "cz-customizable": "5.0.0",
     "semantic-release": "6.3.6",
     "tslib": "1.7.1",
     "tslint": "5.5.0",
-    "typescript": "2.4.1"
+    "typescript": "2.4.2"
   },
   "peerDependencies": {
     "tslib": "1.7.x",
