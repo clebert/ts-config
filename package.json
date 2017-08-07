@@ -21,7 +21,7 @@
   "devDependencies": {
     "semantic-release": "6.3.6",
     "tslib": "1.7.1",
-    "tslint": "5.5.0",
+    "tslint": "5.6.0",
     "typescript": "2.4.2"
   },
   "peerDependencies": {
