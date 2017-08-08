@@ -73,10 +73,11 @@
     "no-misused-new": true,
     "no-null-keyword": false,
     "no-object-literal-type-assertion": true,
-    "no-shadowed-variable": true,
+    "no-shadowed-variable": [true],
     "no-sparse-arrays": true,
     "no-string-literal": false,
     "no-string-throw": true,
+    "no-submodule-imports": [false],
     "no-switch-case-fall-through": true,
     "no-this-assignment": [true, {"allow-destructuring": true}],
     "no-unbound-method": [true, "ignore-static"], // This rule requires type info to run
@@ -87,7 +88,7 @@
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "no-void-expression": [true, "ignore-arrow-function-shorthand"], // This rule requires type info to run
-    "prefer-conditional-expression": true,
+    "prefer-conditional-expression": [true],
     "prefer-object-spread": true,
     "radix": true,
     "restrict-plus-operands": true, // This rule requires type info to run
@@ -116,6 +117,7 @@
     "max-file-line-count": [false],
     "max-line-length": [false, 80],
     "no-default-export": true,
+    "no-duplicate-imports": true,
     "no-mergeable-namespace": true,
     "no-require-imports": false,
     "object-literal-sort-keys": [false],
@@ -194,6 +196,7 @@
       "method": "never",
       "constructor": "never"
     }],
+    "space-within-parens": [true, 0],
     "switch-final-break": true,
     "type-literal-delimiter": true,
     "variable-name": [true, "ban-keywords"],
