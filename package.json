@@ -19,7 +19,7 @@
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {
-    "semantic-release": "6.3.6",
+    "semantic-release": "7.0.1",
     "tslint": "5.6.0",
     "typescript": "2.4.2"
   },
