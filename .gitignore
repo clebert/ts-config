@@ -2,7 +2,8 @@
 node_modules
 npm-debug.log
 package-lock.json
-test.d.ts
-test.js
-test.js.map
+foo.js*
+foo.d.ts
+bar.js*
+bar.d.ts
 todo.tasks
