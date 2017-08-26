@@ -25,6 +25,7 @@
     "no-magic-numbers": false,
     "no-namespace": [true, "allow-declarations"],
     "no-non-null-assertion": true,
+    "no-parameter-reassignment": false,
     "no-reference": false,
     "no-unnecessary-type-assertion": true, // This rule requires type info to run
     "no-var-requires": false,
@@ -205,8 +206,10 @@
       "check-decl",
       "check-operator",
       "check-separator",
+      "check-rest-spread",
       "check-type",
       "check-typecast",
+      "check-type-operator",
       "check-preblock"
     ]
   }
