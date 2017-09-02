@@ -21,11 +21,11 @@
   "devDependencies": {
     "semantic-release": "^7.0.2",
     "tslint": "^5.7.0",
-    "typescript": "^2.4.2"
+    "typescript": "^2.5.2"
   },
   "peerDependencies": {
     "tslint": "^5.7.0",
-    "typescript": "^2.4.2"
+    "typescript": "^2.5.2"
   },
   "dependencies": {
     "comment-json": "^1.1.3"
