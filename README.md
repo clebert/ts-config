@@ -6,7 +6,7 @@
 [![Greenkeeper][6]][7]
 [![TypeScript][8]][9]
 
-Expandable, well-designed configurations for the latest versions of [TSLint][10] and [TypeScript][9].
+Extendable, well-designed configurations for the latest versions of [TSLint][10] and [TypeScript][9].
 
 ## Installation
 
