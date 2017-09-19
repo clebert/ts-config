@@ -1,7 +1,7 @@
 {
   "name": "ts-config",
   "version": "0.0.0-development",
-  "description": "Expandable, well-designed configurations for the latest versions of TSLint and TypeScript.",
+  "description": "Extendable, well-designed configurations for the latest versions of TSLint and TypeScript.",
   "license": "MIT",
   "author": "Clemens Akens <clebert@me.com>",
   "repository": {
