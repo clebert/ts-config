@@ -19,15 +19,15 @@
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {
-    "semantic-release": "^7.0.2",
-    "tslint": "^5.7.0",
-    "typescript": "^2.5.2"
+    "semantic-release": "~8.0.3",
+    "tslint": "~5.7.0",
+    "typescript": "~2.5.3"
   },
   "peerDependencies": {
-    "tslint": "^5.7.0",
-    "typescript": "^2.5.2"
+    "tslint": "~5.7.0",
+    "typescript": "~2.5.3"
   },
   "dependencies": {
-    "comment-json": "^1.1.3"
+    "comment-json": "~1.1.3"
   }
 }
