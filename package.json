@@ -11,20 +11,18 @@
   "scripts": {
     "prepublishOnly": "./scripts/prepublish.js",
     "release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "npm run test:tslint && npm run test:tslint-rules && npm run test:tslint-type-check && npm run test:tslint-type-check-rules && npm run test:typescript",
+    "test": "npm run test:tslint && npm run test:tslint-project && npm run test:typescript",
     "test:tslint": "tslint --config tslint.json test.ts",
-    "test:tslint-rules": "! tslint --config tslint.json test.ts 2>&1 | grep -q 'Could not find implementations'",
-    "test:tslint-type-check": "tslint --config tslint.json --project tsconfig.json --type-check test.ts",
-    "test:tslint-type-check-rules": "! tslint --config tslint.json --project tsconfig.json --type-check test.ts 2>&1 | grep -q 'Could not find implementations'",
+    "test:tslint-project": "tslint --config tslint.json --project tsconfig.json test.ts",
     "test:typescript": "tsc --project ."
   },
   "devDependencies": {
-    "semantic-release": "~8.0.3",
-    "tslint": "~5.7.0",
+    "semantic-release": "~8.2.0",
+    "tslint": "~5.8.0",
     "typescript": "~2.5.3"
   },
   "peerDependencies": {
-    "tslint": "~5.7.0",
+    "tslint": "~5.8.0",
     "typescript": "~2.5.3"
   },
   "dependencies": {
