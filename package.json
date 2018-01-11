@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "semantic-release": "~8.2.0",
-    "tslint": "~5.8.0",
+    "tslint": "~5.9.0",
     "typescript": "~2.6.1"
   },
   "peerDependencies": {
