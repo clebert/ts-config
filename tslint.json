@@ -61,6 +61,7 @@
     "no-duplicate-super": true,
     "no-duplicate-switch-case": true,
     "no-duplicate-variable": [true, "check-parameters"],
+    "no-dynamic-delete": true,
     "no-empty": true,
     "no-eval": true,
     "no-floating-promises": [true], // This rule requires type info to run
@@ -129,6 +130,7 @@
         "esSpecCompliant": true
       }
     ],
+    "prefer-readonly": [true],
 
     // Style
     // These rules enforce consistent style across your codebase:
@@ -155,6 +157,7 @@
     "jsdoc-format": [true, "check-multiline-start"],
     "match-default-export-name": true, // This rule requires type info to run
     "newline-before-return": true,
+    "newline-per-chained-call": false,
     "new-parens": true,
     "no-angle-bracket-type-assertion": true,
     "no-boolean-literal-compare": true, // This rule requires type info to run

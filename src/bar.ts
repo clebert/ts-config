@@ -1,4 +1,4 @@
-import {Foo} from './foo';
+import {Foo} from './Foo';
 
 const {prop} = new Foo();
 
