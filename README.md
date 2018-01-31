@@ -22,7 +22,7 @@ Add the following config files to your projects root directory:
 
 ```json
 {
-  "extends": "./node_modules/ts-config/tslint.json"
+  "extends": "ts-config/tslint"
 }
 ```
 
