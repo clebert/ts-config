@@ -130,7 +130,7 @@
         "esSpecCompliant": true
       }
     ],
-    "prefer-readonly": [true],
+    "prefer-readonly": [true], // This rule requires type info to run
 
     // Style
     // These rules enforce consistent style across your codebase:
