@@ -1,0 +1,13 @@
+{
+  "linters": {
+    "*.{js,json,md}": [
+      "yarn prettier --write",
+      "git add"
+    ],
+    "*.ts": [
+      "yarn tslint --config tslint.json --project . --fix",
+      "yarn prettier --write",
+      "git add"
+    ]
+  }
+}
