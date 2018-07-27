@@ -12,7 +12,8 @@
     "url": "https://github.com/clebert/ts-config/issues"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "tsconfig.json"
   ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
