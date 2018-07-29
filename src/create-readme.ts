@@ -1,8 +1,10 @@
 import {writeFileSync} from 'fs';
 import {format} from 'prettier';
 import {jsRules, rules} from '.';
+import {commandName as initTsLintCommandName} from './commands/init-tslint';
+import {commandName as initTypeScriptCommandName} from './commands/init-typescript';
 import {RuleName, allRules, prettierRules} from './rules';
-import {renderRule} from './utils';
+import {getHelp, renderRule} from './utils';
 
 const comments: {[ruleName in RuleName]?: string[]} = {
   'no-unused-variable': [
@@ -43,15 +45,22 @@ First, install \`${packageName}\` as a dev dependency:
 yarn add -D ${packageName}
 \`\`\`
 
-Then create a TSLint configuration file (\`tslint.json\`) like this:
+\`\`\`sh
+npm install -D ${packageName}
+\`\`\`
 
-\`\`\`json
-{
-  "extends": "${packageName}",
-  "linterOptions": {
-    "exclude": ["**/node_modules/**"]
-  }
-}
+Then use the [CLI](#${initTsLintCommandName}) to create a TSLint configuration
+file that extends this configuration preset:
+
+\`\`\`sh
+npx ts-config ${initTsLintCommandName}
+\`\`\`
+
+_Optional:_ Use the [CLI](#${initTypeScriptCommandName}) to create a TypeScript
+configuration file with strict settings:
+
+\`\`\`sh
+npx ts-config ${initTypeScriptCommandName}
 \`\`\`
 
 Now you can run TSLint as follows (assuming that TypeScript and Prettier are
@@ -59,10 +68,28 @@ configured accordingly):
 
 \`\`\`sh
 # Lint your TS sources
-yarn tslint --config tslint.json --project . '**/*.{ts,tsx}'
+npx tslint --config tslint.json --project . '**/*.{ts,tsx}'
 
 # Lint your JS sources
-yarn tslint --config tslint.json '**/*.{js,jsx}'
+npx tslint --config tslint.json '**/*.{js,jsx}'
+\`\`\`
+
+## CLI commands
+
+### ${initTsLintCommandName}
+
+\`\`\`sh
+$ npx ts-config ${initTsLintCommandName} help
+
+${getHelp(initTsLintCommandName)}
+\`\`\`
+
+### ${initTypeScriptCommandName}
+
+\`\`\`sh
+$ npx ts-config ${initTypeScriptCommandName} help
+
+${getHelp(initTypeScriptCommandName)}
 \`\`\`
 
 ## Configuration preset
@@ -76,43 +103,12 @@ on the built-in configuration preset \`tslint:all\`:
 > (Exceptions include rules such as \`"ban"\`, \`"import-blacklist"\`, and
 > \`"file-header"\`, which have no sensible defaults, and deprecated rules.)
 
-It is assumed that [TypeScript](https://www.typescriptlang.org/) is configured
-with strict settings, e.g.:
+**It is assumed that [TypeScript](https://www.typescriptlang.org/) is configured
+with strict settings. Also, it is assumed that [Prettier](https://prettier.io/)
+is used for formatting your sources.**
 
-\`\`\`json
-{
-  "compilerOptions": {
-    "target": "ES2017",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "declaration": true,
-    "sourceMap": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
-  }
-}
-\`\`\`
-
-**Note:** You can use the \`tsconfig.json\` file of this package as a basis for
-your project, e.g.:
-
-\`\`\`json
-{
-  "extends": "./node_modules/${packageName}/tsconfig.json",
-  "include": ["src/**/*.ts", "src/**/*.tsx", "typings/**/*.d.ts"],
-  "compilerOptions": {
-    "outDir": "dist/"
-  }
-}
-\`\`\`
-
-Also, it is assumed that [Prettier](https://prettier.io/) is used for formatting
-your sources.
-
-The deviations from the configuration preset [\`tslint:all@${tsLintVersion}\`](https://github.com/palantir/tslint/blob/${tsLintVersion}/src/configs/all.ts)
+The deviations from the configuration preset
+[\`tslint:all@${tsLintVersion}\`](https://github.com/palantir/tslint/blob/${tsLintVersion}/src/configs/all.ts)
 are documented below:
 
 - [TypeScript and JavaScript rule overrides](#typescript-and-javascript-rule-overrides)

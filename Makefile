@@ -3,14 +3,14 @@ test: README.md
 	@yarn tslint --config tslint.json --project . --format verbose '**/*.ts'
 	@touch $@
 
-README.md: dist/
+README.md: dist
 	node dist/create-readme.js
 
-dist/: src/*.ts src/*/*.ts node_modules/ tsconfig.json
+dist: src/*.ts src/*/*.ts node_modules tsconfig.json
 	@yarn tsc --project .
 	@touch $@
 
-node_modules/: package.json yarn.lock
+node_modules: package.json yarn.lock
 	@yarn install --check-files
 	@touch $@
 
