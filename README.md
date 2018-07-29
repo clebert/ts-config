@@ -66,8 +66,6 @@ OPTIONS
 
 EXAMPLES
   $ ts-config init-tslint
-  $ ts-config init-tslint --force
-  $ ts-config init-tslint --config='tslint.build.json'
   $ ts-config init-tslint --config='tslint.build.json' --force
 ```
 
@@ -85,12 +83,11 @@ OPTIONS
   -c, --config=config  [default: tsconfig.json]
   -f, --force          overwrite an existing configuration file
   -h, --help           show CLI help
+  -r, --react          add React-specific settings
 
 EXAMPLES
   $ ts-config init-typescript
-  $ ts-config init-typescript --force
-  $ ts-config init-typescript --config='tsconfig.build.json'
-  $ ts-config init-typescript --config='tsconfig.build.json' --force
+  $ ts-config init-typescript --config='tsconfig.build.json' --force --react
 ```
 
 ## Configuration preset

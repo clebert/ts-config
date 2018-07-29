@@ -11,9 +11,7 @@ export default class InitTypeScript extends oclif.Command {
 
   public static examples = [
     `$ ts-config ${commandName}`,
-    `$ ts-config ${commandName} --force`,
-    `$ ts-config ${commandName} --config='tsconfig.build.json'`,
-    `$ ts-config ${commandName} --config='tsconfig.build.json' --force`
+    `$ ts-config ${commandName} --config='tsconfig.build.json' --force --react`
   ];
 
   public static flags = {
@@ -25,6 +23,10 @@ export default class InitTypeScript extends oclif.Command {
     force: oclif.flags.boolean({
       char: 'f',
       description: 'overwrite an existing configuration file'
+    }),
+    react: oclif.flags.boolean({
+      char: 'r',
+      description: 'add React-specific settings'
     })
   };
 
@@ -47,7 +49,16 @@ export default class InitTypeScript extends oclif.Command {
           noImplicitReturns: true,
           noFallthroughCasesInSwitch: true,
           forceConsistentCasingInFileNames: true,
-          outDir: 'lib/'
+          outDir: 'lib/',
+          ...(flags.react
+            ? {
+                lib: ['dom', 'es2017'],
+                jsx: 'react',
+                jsxFactory: 'React.createElement'
+              }
+            : {
+                lib: ['es2017']
+              })
         }
       },
       flags.force
