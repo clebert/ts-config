@@ -11,11 +11,11 @@
 First, install `ts-config` as a dev dependency:
 
 ```sh
-yarn add -D ts-config
+yarn add -D ts-config tslint typescript
 ```
 
 ```sh
-npm install -D ts-config
+npm install -D ts-config tslint typescript
 ```
 
 Then use the [CLI](#init-tslint) to create a TSLint configuration file that
