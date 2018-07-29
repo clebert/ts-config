@@ -42,10 +42,12 @@ const readme = `
 First, install \`${packageName}\` as a dev dependency:
 
 \`\`\`sh
+# Install using Yarn
 yarn add -D ${packageName} tslint typescript
 \`\`\`
 
 \`\`\`sh
+# Install using NPM
 npm install -D ${packageName} tslint typescript
 \`\`\`
 
@@ -69,7 +71,9 @@ configured accordingly):
 \`\`\`sh
 # Lint your TS sources
 npx tslint --config tslint.json --project . '**/*.{ts,tsx}'
+\`\`\`
 
+\`\`\`sh
 # Lint your JS sources
 npx tslint --config tslint.json '**/*.{js,jsx}'
 \`\`\`

@@ -11,10 +11,12 @@
 First, install `ts-config` as a dev dependency:
 
 ```sh
+# Install using Yarn
 yarn add -D ts-config tslint typescript
 ```
 
 ```sh
+# Install using NPM
 npm install -D ts-config tslint typescript
 ```
 
@@ -38,7 +40,9 @@ configured accordingly):
 ```sh
 # Lint your TS sources
 npx tslint --config tslint.json --project . '**/*.{ts,tsx}'
+```
 
+```sh
 # Lint your JS sources
 npx tslint --config tslint.json '**/*.{js,jsx}'
 ```
