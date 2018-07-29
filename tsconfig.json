@@ -12,6 +12,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "lib/"
+    "outDir": "lib/",
+    "lib": ["es2017"]
   }
 }

@@ -11,8 +11,6 @@ export default class InitTsLint extends oclif.Command {
 
   public static examples = [
     `$ ts-config ${commandName}`,
-    `$ ts-config ${commandName} --force`,
-    `$ ts-config ${commandName} --config='tslint.build.json'`,
     `$ ts-config ${commandName} --config='tslint.build.json' --force`
   ];
 
