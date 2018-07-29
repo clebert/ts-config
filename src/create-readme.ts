@@ -42,11 +42,11 @@ const readme = `
 First, install \`${packageName}\` as a dev dependency:
 
 \`\`\`sh
-yarn add -D ${packageName}
+yarn add -D ${packageName} tslint typescript
 \`\`\`
 
 \`\`\`sh
-npm install -D ${packageName}
+npm install -D ${packageName} tslint typescript
 \`\`\`
 
 Then use the [CLI](#${initTsLintCommandName}) to create a TSLint configuration

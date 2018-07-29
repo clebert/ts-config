@@ -34,21 +34,23 @@
   },
   "dependencies": {
     "@oclif/command": "^1.4.36",
+    "@oclif/config": "^1.6.33",
     "@oclif/errors": "^1.1.2",
     "@oclif/plugin-help": "^2.0.5",
     "common-tags": "^1.8.0",
+    "globby": "^8.0.1",
     "json-diff": "^0.5.2",
     "prettier": "^1.13.7",
     "semver": "^5.5.0"
   },
   "peerDependencies": {
-    "tslint": "^5.10.0"
+    "tslint": "^5.10.0",
+    "typescript": "*"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-angular": "^7.0.1",
     "@commitlint/travis-cli": "^7.0.0",
-    "@oclif/config": "^1.6.33",
     "@types/common-tags": "^1.4.0",
     "@types/node": "^10.5.2",
     "@types/prettier": "^1.13.2",

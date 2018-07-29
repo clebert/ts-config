@@ -28,7 +28,7 @@ export function writeJsonFile(
     const data = `${format(JSON.stringify(json), {
       ...readJsonFile('.prettierrc'),
       parser: 'json'
-    })}\n`;
+    })}`;
 
     fs.writeFileSync(filename, data, {encoding: 'utf8'});
 
