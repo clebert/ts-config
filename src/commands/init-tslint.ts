@@ -33,7 +33,10 @@ export default class InitTsLint extends oclif.Command {
 
     writeJsonFile(
       flags.config as string,
-      {extends: 'ts-config', linterOptions: {exclude: ['**/node_modules/**']}},
+      {
+        extends: 'ts-config',
+        linterOptions: {exclude: ['**/lib/**', '**/node_modules/**']}
+      },
       flags.force
     );
   }

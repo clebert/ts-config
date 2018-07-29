@@ -1,5 +1,5 @@
 .yarn
 CHANGELOG.md
-dist/
+lib/
 node_modules/
 package.json

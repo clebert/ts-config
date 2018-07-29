@@ -13,20 +13,20 @@
   },
   "files": [
     "bin/",
-    "dist/",
+    "lib/",
     "tsconfig.json"
   ],
   "bin": {
     "ts-config": "bin/run"
   },
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "commitmsg": "commitlint --edit",
     "precommit": "lint-staged"
   },
   "oclif": {
-    "commands": "dist/commands",
+    "commands": "lib/commands",
     "bin": "ts-config",
     "plugins": [
       "@oclif/plugin-help"

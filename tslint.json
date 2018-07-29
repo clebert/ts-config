@@ -1,6 +1,6 @@
 {
-  "extends": "./dist/index.js",
+  "extends": "./lib/index.js",
   "linterOptions": {
-    "exclude": ["**/dist/**", "**/node_modules/**"]
+    "exclude": ["**/lib/**", "**/node_modules/**"]
   }
 }

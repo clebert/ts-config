@@ -46,6 +46,7 @@ export default class InitTypeScript extends oclif.Command {
           noUnusedParameters: true,
           noImplicitReturns: true,
           noFallthroughCasesInSwitch: true,
+          forceConsistentCasingInFileNames: true,
           outDir: 'lib/'
         }
       },
