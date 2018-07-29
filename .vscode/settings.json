@@ -9,6 +9,5 @@
   },
   "tslint.enable": true,
   "tslint.ignoreDefinitionFiles": false,
-  "typescript.tsdk": "node_modules/typescript/lib",
   "editor.formatOnSave": true
 }
