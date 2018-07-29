@@ -3,10 +3,10 @@ test: README.md
 	@yarn tslint --config tslint.json --project . --format verbose '**/*.ts'
 	@touch $@
 
-README.md: dist
-	node dist/create-readme.js
+README.md: lib
+	node lib/create-readme.js
 
-dist: src/*.ts src/*/*.ts node_modules tsconfig.json
+lib: src/*.ts src/*/*.ts node_modules tsconfig.json
 	@yarn tsc --project .
 	@touch $@
 
@@ -19,4 +19,4 @@ yarn.lock:
 
 .PHONY: clean
 clean:
-	rm -rf dist/
+	rm -rf lib/

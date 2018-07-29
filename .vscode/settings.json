@@ -1,7 +1,7 @@
 {
   "problems.decorations.enabled": false,
   "search.exclude": {
-    "**/dist/**": true,
+    "**/lib/**": true,
     "**/node_modules/**": true,
     "**/npm-debug.log": true,
     "**/yarn-error.log": true,
