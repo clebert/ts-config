@@ -1,6 +1,6 @@
 {
   "linters": {
-    "*.{js,json,md}": [
+    "*.{js,json,md,yml}": [
       "yarn prettier --write",
       "git add"
     ],

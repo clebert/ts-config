@@ -1,5 +1,5 @@
 test: README.md
-	@yarn prettier --list-different '**/*.{js,json,md,ts}'
+	@yarn prettier --list-different '**/*.{js,json,md,ts,yml}'
 	@yarn tslint --config tslint.json --project . --format verbose '**/*.ts'
 	@touch $@
 
