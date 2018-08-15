@@ -626,6 +626,14 @@ are documented below:
  }
 ```
 
+#### [strict-type-predicates](https://palantir.github.io/tslint/rules/strict-type-predicates/)
+
+```diff
+{
+-  strict-type-predicates: true
+ }
+```
+
 #### [typedef](https://palantir.github.io/tslint/rules/typedef/)
 
 ```diff

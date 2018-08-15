@@ -48,6 +48,7 @@ export const customRules: Rules = {
     'allow-string',
     'allow-number'
   ],
+  'strict-type-predicates': false,
   'switch-default': false,
   'triple-equals': [true, 'allow-null-check'],
   typedef: [true, 'call-signature', 'parameter', 'property-declaration'],
