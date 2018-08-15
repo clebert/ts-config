@@ -4,8 +4,8 @@ node_js:
 cache: yarn
 script:
   - yarn commitlint-travis
-  - make clean
-  - make test
+  - yarn clean
+  - yarn test
   - git diff --exit-code README.md
 after_success:
   - yarn travis-deploy-once 'yarn semantic-release'

@@ -1,13 +1,15 @@
 {
+  "editor.formatOnSave": true,
   "problems.decorations.enabled": false,
   "search.exclude": {
     "**/lib/**": true,
     "**/node_modules/**": true,
     "**/npm-debug.log": true,
+    "**/todo.tasks": true,
     "**/yarn-error.log": true,
     "**/yarn.lock": true
   },
   "tslint.enable": true,
   "tslint.ignoreDefinitionFiles": false,
-  "editor.formatOnSave": true
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
