@@ -7,6 +7,7 @@ script:
   - yarn clean
   - yarn test
   - git diff --exit-code README.md
+  - git diff --exit-code yarn.lock
 after_success:
   - yarn travis-deploy-once 'yarn semantic-release'
 branches:
