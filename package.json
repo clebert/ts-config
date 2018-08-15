@@ -23,7 +23,8 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "commitmsg": "commitlint --edit",
-    "precommit": "lint-staged"
+    "clean": "autosrc generate clean",
+    "test": "autosrc generate test"
   },
   "oclif": {
     "commands": "lib/commands",
@@ -40,7 +41,7 @@
     "common-tags": "^1.8.0",
     "globby": "^8.0.1",
     "json-diff": "^0.5.2",
-    "prettier": "^1.13.7",
+    "prettier": "^1.14.2",
     "semver": "^5.5.0"
   },
   "peerDependencies": {
@@ -52,14 +53,14 @@
     "@commitlint/config-angular": "^7.0.1",
     "@commitlint/travis-cli": "^7.0.0",
     "@types/common-tags": "^1.4.0",
-    "@types/node": "^10.5.2",
+    "@types/node": "^10.7.0",
     "@types/prettier": "^1.13.2",
     "@types/semver": "^5.5.0",
+    "autosrc": "^0.1.0",
     "husky": "^0.14.3",
-    "lint-staged": "^7.2.0",
-    "semantic-release": "^15.7.2",
-    "travis-deploy-once": "^5.0.1",
+    "semantic-release": "^15.9.8",
+    "travis-deploy-once": "^5.0.2",
     "tslint": "^5.11.0",
-    "typescript": "~2.9.2"
+    "typescript": "~3.0.1"
   }
 }
