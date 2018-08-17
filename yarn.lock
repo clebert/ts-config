@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@autosrc/generator@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/generator/-/generator-0.1.0.tgz#d93d09fc910cd795630589e2bd37343821632368"
+"@autosrc/generator@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/generator/-/generator-0.3.0.tgz#e2994122f642b71adfa9b2eba8b24f9d4dc69e99"
 
-"@autosrc/shell-cp@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/shell-cp/-/shell-cp-0.1.0.tgz#e85fa428e6d95decebde9ff1ef7e709ab9e8c676"
+"@autosrc/shell-cp@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/shell-cp/-/shell-cp-0.3.0.tgz#d98410b311574b24049822be26cbf8c99a22d990"
   dependencies:
     execa "^0.10.0"
 
-"@autosrc/timestamp-fs@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/timestamp-fs/-/timestamp-fs-0.1.0.tgz#892fa63645ae8962edc619575481be21b192f894"
+"@autosrc/timestamp-fs@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/timestamp-fs/-/timestamp-fs-0.3.0.tgz#f3608ce8e6922eecf16b629b8bce0d969ecaab8d"
   dependencies:
     fast-glob "^2.2.2"
 
@@ -520,13 +520,13 @@ atob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
 
-autosrc@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/autosrc/-/autosrc-0.1.0.tgz#17d3127c392dda65a68adf26becd204a46a80728"
+autosrc@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/autosrc/-/autosrc-0.3.0.tgz#dcd7d7c17b8465d251947635581bf8e0844ecb3d"
   dependencies:
-    "@autosrc/generator" "^0.1.0"
-    "@autosrc/shell-cp" "^0.1.0"
-    "@autosrc/timestamp-fs" "^0.1.0"
+    "@autosrc/generator" "^0.3.0"
+    "@autosrc/shell-cp" "^0.3.0"
+    "@autosrc/timestamp-fs" "^0.3.0"
     yargs "^12.0.1"
 
 aws-sign2@~0.7.0:
