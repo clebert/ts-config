@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@autosrc/generator@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/generator/-/generator-0.1.0.tgz#d93d09fc910cd795630589e2bd37343821632368"
+"@autosrc/generator@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/generator/-/generator-0.4.0.tgz#d4a3f4a1036a407c5d28329e558748a5f84a5838"
 
-"@autosrc/shell-cp@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/shell-cp/-/shell-cp-0.1.0.tgz#e85fa428e6d95decebde9ff1ef7e709ab9e8c676"
+"@autosrc/shell-cp@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/shell-cp/-/shell-cp-0.4.0.tgz#df0532a344861abbfc9c38f931b4093c55776551"
   dependencies:
     execa "^0.10.0"
 
-"@autosrc/timestamp-fs@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/timestamp-fs/-/timestamp-fs-0.1.0.tgz#892fa63645ae8962edc619575481be21b192f894"
+"@autosrc/timestamp-fs@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/timestamp-fs/-/timestamp-fs-0.4.0.tgz#e1645300fff9f36445c27a9ee480bbffe7004766"
   dependencies:
     fast-glob "^2.2.2"
 
@@ -520,14 +520,14 @@ atob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
 
-autosrc@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/autosrc/-/autosrc-0.1.0.tgz#17d3127c392dda65a68adf26becd204a46a80728"
+autosrc@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/autosrc/-/autosrc-0.4.0.tgz#1522c80650f85c4b732d6760041f246cf2f5e56f"
   dependencies:
-    "@autosrc/generator" "^0.1.0"
-    "@autosrc/shell-cp" "^0.1.0"
-    "@autosrc/timestamp-fs" "^0.1.0"
-    yargs "^12.0.1"
+    "@autosrc/generator" "^0.4.0"
+    "@autosrc/shell-cp" "^0.4.0"
+    "@autosrc/timestamp-fs" "^0.4.0"
+    commander "^2.17.1"
 
 aws-sign2@~0.7.0:
   version "0.7.0"
@@ -1419,6 +1419,10 @@ combined-stream@1.0.6, combined-stream@~1.0.6:
 commander@^2.12.1:
   version "2.16.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.16.0.tgz#f16390593996ceb4f3eeb020b31d78528f7f8a50"
+
+commander@^2.17.1:
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
 common-tags@^1.8.0:
   version "1.8.0"
