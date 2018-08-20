@@ -42,7 +42,7 @@
     "globby": "^8.0.1",
     "json-diff": "^0.5.2",
     "prettier": "^1.14.2",
-    "semver": "^5.5.0"
+    "semver": "^5.5.1"
   },
   "peerDependencies": {
     "tslint": "^5.10.0",
