@@ -1,8 +1,11 @@
+// @ts-check
+
+const autosrc = require('autosrc');
+
+/** @type {autosrc.Rules} */
 const rules = (exports.rules = {});
 
-function update(target) {
-  return `touch ${target}`;
-}
+const update = target => `touch ${target}`;
 
 rules.test = {
   prereqs: ['README.md'],
