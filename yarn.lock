@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@autosrc/generator@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/generator/-/generator-0.4.0.tgz#d4a3f4a1036a407c5d28329e558748a5f84a5838"
+"@autosrc/generator@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/generator/-/generator-0.8.0.tgz#f2dd0ebec5f37bdf27281e26f2b579fccd88aff4"
 
-"@autosrc/shell-cp@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/shell-cp/-/shell-cp-0.4.0.tgz#df0532a344861abbfc9c38f931b4093c55776551"
+"@autosrc/shell-cp@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/shell-cp/-/shell-cp-0.8.0.tgz#cbe72e2cfae46f6a3a756a64167342268e97d39f"
   dependencies:
-    execa "^0.10.0"
+    execa "^0.11.0"
 
-"@autosrc/timestamp-fs@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/timestamp-fs/-/timestamp-fs-0.4.0.tgz#e1645300fff9f36445c27a9ee480bbffe7004766"
+"@autosrc/timestamp-fs@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/timestamp-fs/-/timestamp-fs-0.8.0.tgz#cea4bb790e27367c96c1005a60a439d9225bda2a"
   dependencies:
     fast-glob "^2.2.2"
 
@@ -520,13 +520,14 @@ atob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
 
-autosrc@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/autosrc/-/autosrc-0.4.0.tgz#1522c80650f85c4b732d6760041f246cf2f5e56f"
+autosrc@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/autosrc/-/autosrc-0.8.0.tgz#1f38c365163b3bcb628c2032fdd3f971c0d9b313"
   dependencies:
-    "@autosrc/generator" "^0.4.0"
-    "@autosrc/shell-cp" "^0.4.0"
-    "@autosrc/timestamp-fs" "^0.4.0"
+    "@autosrc/generator" "^0.8.0"
+    "@autosrc/shell-cp" "^0.8.0"
+    "@autosrc/timestamp-fs" "^0.8.0"
+    chalk "^2.4.1"
     commander "^2.17.1"
 
 aws-sign2@~0.7.0:
@@ -1889,6 +1890,18 @@ execa@^0.10.0:
   dependencies:
     cross-spawn "^6.0.0"
     get-stream "^3.0.0"
+    is-stream "^1.1.0"
+    npm-run-path "^2.0.0"
+    p-finally "^1.0.0"
+    signal-exit "^3.0.0"
+    strip-eof "^1.0.0"
+
+execa@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-0.11.0.tgz#0b3c71daf9b9159c252a863cd981af1b4410d97a"
+  dependencies:
+    cross-spawn "^6.0.0"
+    get-stream "^4.0.0"
     is-stream "^1.1.0"
     npm-run-path "^2.0.0"
     p-finally "^1.0.0"
