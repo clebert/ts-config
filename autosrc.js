@@ -31,11 +31,7 @@ rules.node_modules = {
   recipe: target => ['yarn install --check-files', update(target)]
 };
 
-rules['yarn.lock'] = {
-  recipe: () => ['yarn']
-};
-
 rules.clean = {
   phony: true,
-  recipe: () => ['rm -rf lib/']
+  recipe: () => ['rm -rf lib']
 };
