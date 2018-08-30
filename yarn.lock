@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@autosrc/generator@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/generator/-/generator-0.9.0.tgz#ad4f53e9f040b8a18d63e190fee57eb6a0437025"
+"@autosrc/generator@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/generator/-/generator-0.10.0.tgz#53ddade371ddc1058c28e64d7ca0bb5cc396a32e"
 
-"@autosrc/shell-cp@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/shell-cp/-/shell-cp-0.9.0.tgz#e4a71e49ac4231f6fd7c7e05bc11a9e00fcb1d72"
+"@autosrc/shell-cp@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/shell-cp/-/shell-cp-0.10.0.tgz#dfa6e84ff14112b0cace2059c44afa3afa70a907"
   dependencies:
     execa "^1.0.0"
 
-"@autosrc/timestamp-fs@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@autosrc/timestamp-fs/-/timestamp-fs-0.9.0.tgz#a182ad85c38c4c77fa2d9d9540d41e8232930e23"
+"@autosrc/timestamp-fs@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@autosrc/timestamp-fs/-/timestamp-fs-0.10.0.tgz#6bf55cddf6b8e44f5f7d3cb2f53d2241f563be14"
   dependencies:
     fast-glob "^2.2.2"
 
@@ -1055,13 +1055,13 @@ atob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
 
-autosrc@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/autosrc/-/autosrc-0.9.0.tgz#14e7d49b8049878b447208d28a14f447c12c5bf4"
+autosrc@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/autosrc/-/autosrc-0.10.0.tgz#cc86cf3b1d184bcee92096636549b2c74cce790f"
   dependencies:
-    "@autosrc/generator" "^0.9.0"
-    "@autosrc/shell-cp" "^0.9.0"
-    "@autosrc/timestamp-fs" "^0.9.0"
+    "@autosrc/generator" "^0.10.0"
+    "@autosrc/shell-cp" "^0.10.0"
+    "@autosrc/timestamp-fs" "^0.10.0"
     chalk "^2.4.1"
     commander "^2.17.1"
 
