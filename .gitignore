@@ -1,6 +1,6 @@
+format
 lib/
 node_modules/
 npm-debug.log
-test
 todo.tasks
 yarn-error.log

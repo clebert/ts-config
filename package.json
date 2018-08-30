@@ -23,8 +23,8 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "commitmsg": "commitlint --edit",
-    "clean": "autosrc clean",
-    "test": "autosrc test"
+    "clean": "autosrc --verbose clean",
+    "test": "autosrc --verbose all"
   },
   "oclif": {
     "commands": "lib/commands",
@@ -56,7 +56,7 @@
     "@types/node": "^10.9.3",
     "@types/prettier": "^1.13.2",
     "@types/semver": "^5.5.0",
-    "autosrc": "^0.10.0",
+    "autosrc": "^0.11.0",
     "husky": "^0.14.3",
     "semantic-release": "^15.9.12",
     "travis-deploy-once": "^5.0.5",
