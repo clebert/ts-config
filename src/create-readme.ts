@@ -47,7 +47,7 @@ yarn add -D ${packageName} tslint typescript
 \`\`\`
 
 \`\`\`sh
-# Install using NPM
+# or install using npm
 npm install -D ${packageName} tslint typescript
 \`\`\`
 
@@ -62,7 +62,13 @@ _Optional:_ Use the [CLI](#${initTypeScriptCommandName}) to create a TypeScript
 configuration file with strict settings:
 
 \`\`\`sh
+# Create a TypeScript configuration
 npx ts-config ${initTypeScriptCommandName}
+\`\`\`
+
+\`\`\`sh
+# or create a TypeScript configuration for a React project
+npx ts-config ${initTypeScriptCommandName} --react
 \`\`\`
 
 Now you can run TSLint as follows (assuming that TypeScript and Prettier are
@@ -74,7 +80,7 @@ npx tslint --config tslint.json --project . '**/*.{ts,tsx}'
 \`\`\`
 
 \`\`\`sh
-# Lint your JS sources
+# and lint your JS sources
 npx tslint --config tslint.json '**/*.{js,jsx}'
 \`\`\`
 
