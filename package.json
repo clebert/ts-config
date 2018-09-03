@@ -37,7 +37,7 @@
     "@oclif/command": "^1.5.0",
     "@oclif/config": "^1.7.3",
     "@oclif/errors": "^1.2.0",
-    "@oclif/plugin-help": "^2.1.0",
+    "@oclif/plugin-help": "^2.1.1",
     "common-tags": "^1.8.0",
     "globby": "^8.0.1",
     "json-diff": "^0.5.2",
