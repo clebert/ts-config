@@ -49,12 +49,12 @@ export default class InitTypeScript extends oclif.Command {
           noImplicitReturns: true,
           noFallthroughCasesInSwitch: true,
           forceConsistentCasingInFileNames: true,
+          esModuleInterop: true,
           outDir: 'lib/',
           ...(flags.react
             ? {
                 lib: ['dom', 'es2017'],
-                jsx: 'react',
-                jsxFactory: 'React.createElement'
+                jsx: 'react'
               }
             : {
                 lib: ['es2017']
