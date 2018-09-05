@@ -568,15 +568,15 @@
     lodash.pick "4.4.0"
     meow "5.0.0"
 
-"@commitlint/config-angular-type-enum@^7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-angular-type-enum/-/config-angular-type-enum-7.1.1.tgz#971be030aac7bb9566c205e68e8c6f5275493d76"
+"@commitlint/config-angular-type-enum@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular-type-enum/-/config-angular-type-enum-7.1.2.tgz#7d2909f08ed174f17b89f8cd067da579e6ec1fab"
 
-"@commitlint/config-angular@^7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-7.1.1.tgz#21633f92049bb3c7756fd342d5d97f13f7e4c217"
+"@commitlint/config-angular@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-7.1.2.tgz#7b04086d9b0b5a4f68d129ca0b675a0e1ce33bdf"
   dependencies:
-    "@commitlint/config-angular-type-enum" "^7.1.1"
+    "@commitlint/config-angular-type-enum" "^7.1.2"
 
 "@commitlint/ensure@^7.1.2":
   version "7.1.2"
