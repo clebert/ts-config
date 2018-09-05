@@ -51,7 +51,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-angular": "^7.1.1",
-    "@commitlint/travis-cli": "^7.1.1",
+    "@commitlint/travis-cli": "^7.1.2",
     "@types/common-tags": "^1.4.0",
     "@types/node": "^10.9.4",
     "@types/prettier": "^1.13.2",
