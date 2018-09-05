@@ -553,7 +553,7 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@commitlint/cli@^7.1.1", "@commitlint/cli@^7.1.2":
+"@commitlint/cli@^7.1.2":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.1.2.tgz#9ad1b4703679e18e3b1972c4abf0441255219e78"
   dependencies:
@@ -681,11 +681,11 @@
   dependencies:
     find-up "^2.1.0"
 
-"@commitlint/travis-cli@^7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/travis-cli/-/travis-cli-7.1.1.tgz#3badff912e83a9991ed435ea3d9d6188b818b508"
+"@commitlint/travis-cli@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/travis-cli/-/travis-cli-7.1.2.tgz#7de0ed9cc420e0f231119e3ba8fcf73fb7d2a7e9"
   dependencies:
-    "@commitlint/cli" "^7.1.1"
+    "@commitlint/cli" "^7.1.2"
     babel-runtime "6.26.0"
     execa "0.9.0"
 
