@@ -717,11 +717,11 @@
     debug "^3.1.0"
     semver "^5.5.0"
 
-"@oclif/config@^1.7.4":
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.7.4.tgz#5b7f779534a339de8c62a863b12f5740b15c41f5"
+"@oclif/config@^1.7.6":
+  version "1.7.6"
+  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.7.6.tgz#849e5f79591c8dd29d99dd3aba0914b50e2c2e74"
   dependencies:
-    debug "^3.1.0"
+    debug "^4.0.1"
     tslib "^1.9.3"
 
 "@oclif/errors@^1.1.2", "@oclif/errors@^1.2.0":
@@ -1731,7 +1731,7 @@ debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
-debug@^4.0.0:
+debug@^4.0.0, debug@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.0.1.tgz#f9bb36d439b8d1f0dd52d8fb6b46e4ebb8c1cd5b"
   dependencies:
