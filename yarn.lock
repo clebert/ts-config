@@ -708,14 +708,14 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.0.tgz#50c1e2260ac0ed9439a181de3725a0168d59c48a"
 
-"@oclif/command@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.5.0.tgz#d5276a19506349fff0254b0dd98e3b8a2bd971aa"
+"@oclif/command@^1.5.0", "@oclif/command@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.5.1.tgz#dd2e1c1f8e55dad73036d4cab036ac3550ff8c24"
   dependencies:
-    "@oclif/errors" "^1.1.2"
-    "@oclif/parser" "^3.6.0"
-    debug "^3.1.0"
-    semver "^5.5.0"
+    "@oclif/errors" "^1.2.0"
+    "@oclif/parser" "^3.6.1"
+    debug "^4.0.1"
+    semver "^5.5.1"
 
 "@oclif/config@^1.7.6":
   version "1.7.6"
@@ -724,7 +724,7 @@
     debug "^4.0.1"
     tslib "^1.9.3"
 
-"@oclif/errors@^1.1.2", "@oclif/errors@^1.2.1":
+"@oclif/errors@^1.2.0", "@oclif/errors@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@oclif/errors/-/errors-1.2.1.tgz#3d655bec6ce7eb7df2f3cd39c23eb62f0470b77d"
   dependencies:
@@ -738,9 +738,9 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@oclif/linewrap/-/linewrap-1.0.0.tgz#aedcb64b479d4db7be24196384897b5000901d91"
 
-"@oclif/parser@^3.6.0":
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.6.0.tgz#8d0b4c3e012aa1f0d59a6936b3dedec318b11a6d"
+"@oclif/parser@^3.6.1":
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.6.1.tgz#dd0ad29d9178d75a2de30314874a6167675925ed"
   dependencies:
     "@oclif/linewrap" "^1.0.0"
     chalk "^2.4.1"
