@@ -6,6 +6,7 @@ export const customRules: Rules = {
   'comment-format': [true, 'check-space'],
   'completed-docs': false,
   'interface-name': [true, 'never-prefix'],
+  'match-default-export-name': false,
   'max-classes-per-file': false,
   'max-file-line-count': false,
   'member-ordering': [true, {order: 'statics-first'}],
