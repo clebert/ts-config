@@ -539,6 +539,14 @@ are documented below:
  }
 ```
 
+#### [match-default-export-name](https://palantir.github.io/tslint/rules/match-default-export-name/)
+
+```diff
+{
+-  match-default-export-name: true
+ }
+```
+
 #### [no-empty-interface](https://palantir.github.io/tslint/rules/no-empty-interface/)
 
 ```diff
