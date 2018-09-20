@@ -41,7 +41,7 @@
     "common-tags": "^1.8.0",
     "globby": "^8.0.1",
     "json-diff": "^0.5.2",
-    "prettier": "^1.14.2",
+    "prettier": "^1.14.3",
     "semver": "^5.5.1"
   },
   "peerDependencies": {
