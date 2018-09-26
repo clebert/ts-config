@@ -40,6 +40,7 @@ export const customRules: Rules = {
       'named-imports-order': 'lowercase-last'
     }
   ],
+  'prefer-function-over-method': false,
   'prefer-template': [true, 'allow-single-concat'],
   'return-undefined': false,
   'strict-boolean-expressions': [
