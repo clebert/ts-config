@@ -390,6 +390,14 @@ are documented below:
  }
 ```
 
+#### [prefer-function-over-method](https://palantir.github.io/tslint/rules/prefer-function-over-method/)
+
+```diff
+{
+-  prefer-function-over-method: true
+ }
+```
+
 #### [prefer-template](https://palantir.github.io/tslint/rules/prefer-template/)
 
 ```diff

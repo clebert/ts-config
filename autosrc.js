@@ -23,7 +23,11 @@ rules.all = {
 rules.clean = {
   phony: true,
   prereqs: ['src/**/*.{ts,tsx}'],
-  recipe: (_, newerPrereqs) => [...newerPrereqs.map(touch), 'rm -rf lib']
+  recipe: (_, newerPrereqs) => [
+    ...newerPrereqs.map(touch),
+    'rm -rf format',
+    'rm -rf lib'
+  ]
 };
 
 rules.format = {
