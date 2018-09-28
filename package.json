@@ -39,7 +39,7 @@
     "@oclif/plugin-help": "^2.1.2",
     "common-tags": "^1.8.0",
     "globby": "^8.0.1",
-    "json-diff": "^0.5.2",
+    "json-diff": "^0.5.3",
     "prettier": "^1.14.3",
     "semver": "^5.5.1"
   },
