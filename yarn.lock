@@ -3389,10 +3389,10 @@ json-buffer@3.0.0:
   resolved "https://registry.yarnpkg.com/json-buffer/-/json-buffer-3.0.0.tgz#5b1f397afc75d677bde8bcfc0e47e1f9a3d9a898"
   integrity sha1-Wx85evx11ne96Lz8Dkfh+aPZqJg=
 
-json-diff@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/json-diff/-/json-diff-0.5.2.tgz#e0bc9e434cd2c4c6354487835e01bf3fed335cda"
-  integrity sha512-N7oapTQdD4rLMUtA7d1HATCPY/BpHuSNL1mhvIuoS0u5NideDvyR+gB/ntXB7ejFz/LM0XzPLNUJQcC68n5sBw==
+json-diff@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/json-diff/-/json-diff-0.5.3.tgz#6ad1fe9d31c3dc154e51b50dcd177af5cbd46f98"
+  integrity sha512-3F9MMFWpZmb8A9VEOAo1xll+z0JGPLN/2mclRm9NyfPi8cynkTNwzqTDw1MZpadEnEHcCtDy6mzReM4O0BLIEA==
   dependencies:
     cli-color "~0.1.6"
     difflib "~0.2.1"
