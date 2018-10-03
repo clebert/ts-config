@@ -809,10 +809,10 @@
     debug "^4.0.1"
     semver "^5.5.1"
 
-"@oclif/config@^1.7.6":
-  version "1.7.6"
-  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.7.6.tgz#849e5f79591c8dd29d99dd3aba0914b50e2c2e74"
-  integrity sha512-YHza1dt/oti28CZkr/TlqswmrCoGs5hjDdxGPMmrX77IDEx/RUgD7sRpZfBlTZDY/wYuCSCx8Z6m+hSO8S/FEQ==
+"@oclif/config@^1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.8.1.tgz#d23b49871c9a52e8e5050cdbd30b36d4774e66d8"
+  integrity sha512-KamkrumohhNSrACpkynJGHM4QfBrWkz4X4mbvhoUMHPORBUVtyUMIJhMnX/ND9DqmBsR3z7aP+QyxJS3aoUU3w==
   dependencies:
     debug "^4.0.1"
     tslib "^1.9.3"
