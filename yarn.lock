@@ -799,12 +799,12 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.0.tgz#50c1e2260ac0ed9439a181de3725a0168d59c48a"
   integrity sha512-LAQ1d4OPfSJ/BMbI2DuizmYrrkD9JMaTdi2hQTlI53lQ4kRQPyZQRS4CYQ7O66bnBBnP/oYdRxbk++X0xuFU6A==
 
-"@oclif/command@^1.5.0", "@oclif/command@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.5.1.tgz#dd2e1c1f8e55dad73036d4cab036ac3550ff8c24"
-  integrity sha512-jRBkar3wNCh+5XSY1aXlGL9Pk8x4eyHC64PJ+vW6KqALs2cX9hd7pxTEfrU1e6kow5XpsNUsuEOPcjg9L8zHmQ==
+"@oclif/command@^1.5.0", "@oclif/command@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.5.2.tgz#9c3fc042be785f8cec3f8f9c5d7768ebe80bb625"
+  integrity sha512-xNGfzij9l56nkh5fxoHyzI9MpwISp6ZBP3OAZ/SEQyHgPRe4ZrhNHtmoky4X4oZmxzgf317W4c1rUDUCNWWBjQ==
   dependencies:
-    "@oclif/errors" "^1.2.0"
+    "@oclif/errors" "^1.2.1"
     "@oclif/parser" "^3.6.1"
     debug "^4.0.1"
     semver "^5.5.1"
@@ -817,7 +817,7 @@
     debug "^4.0.1"
     tslib "^1.9.3"
 
-"@oclif/errors@^1.2.0", "@oclif/errors@^1.2.1":
+"@oclif/errors@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@oclif/errors/-/errors-1.2.1.tgz#3d655bec6ce7eb7df2f3cd39c23eb62f0470b77d"
   integrity sha512-LOZBEraXrMuRPnUYrEFrmJ7m8to7pZ6E0W9rWvjr8PPlxc2PsqGQCeychbqeEWc6pHjsy7GF9M+Pjw16J2oC5A==
