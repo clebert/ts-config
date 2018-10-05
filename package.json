@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@oclif/command": "^1.5.2",
-    "@oclif/config": "^1.8.4",
+    "@oclif/config": "^1.8.6",
     "@oclif/errors": "^1.2.1",
     "@oclif/plugin-help": "^2.1.2",
     "common-tags": "^1.8.0",
