@@ -624,7 +624,7 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@commitlint/cli@^7.1.2", "@commitlint/cli@^7.2.0":
+"@commitlint/cli@^7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.2.0.tgz#04fb5ba1d28bba100a7f71d51d35aa9a8fd5faba"
   integrity sha512-qFTXZoyi+XFkUXRj1pgcfRw5ao31kPkP/V3c7O8SU52GUVxFo2LM8sFiTF9WEqlgSd7WJA0SGl5tOX/VtCMYEA==
@@ -768,12 +768,12 @@
   dependencies:
     find-up "^2.1.0"
 
-"@commitlint/travis-cli@^7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@commitlint/travis-cli/-/travis-cli-7.1.2.tgz#7de0ed9cc420e0f231119e3ba8fcf73fb7d2a7e9"
-  integrity sha512-2j6CstsKvySBLENYBkPabPdu++Eq4vvl63pLvv97ptrOYk7Eh27rGAile8gSBpwa16JEJXVFlk/hXtVWWUpgyQ==
+"@commitlint/travis-cli@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/travis-cli/-/travis-cli-7.2.0.tgz#813103eb8182f67d18a0b5ce6e03d463548de2e3"
+  integrity sha512-clXzw3o7aOTiZs+BTrZNlfYXaMDuoQsZB8/WzoazVa2wqzOlndYTzNSrvrZNTQOknF6+AtGoo4/n72yjY0qPbA==
   dependencies:
-    "@commitlint/cli" "^7.1.2"
+    "@commitlint/cli" "^7.2.0"
     babel-runtime "6.26.0"
     execa "0.9.0"
 
