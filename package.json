@@ -52,7 +52,7 @@
     "@commitlint/config-angular": "^7.1.2",
     "@commitlint/travis-cli": "^7.2.1",
     "@types/common-tags": "^1.4.0",
-    "@types/node": "^10.12.0",
+    "@types/node": "^10.12.9",
     "@types/prettier": "^1.13.2",
     "@types/semver": "^5.5.0",
     "autosrc": "^0.12.0",
