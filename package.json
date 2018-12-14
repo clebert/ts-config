@@ -56,7 +56,7 @@
     "@types/prettier": "^1.13.2",
     "@types/semver": "^5.5.0",
     "autosrc": "^0.12.0",
-    "husky": "^1.1.2",
+    "husky": "^1.2.1",
     "semantic-release": "^15.12.5",
     "travis-deploy-once": "^5.0.10",
     "tslint": "^5.11.0",
