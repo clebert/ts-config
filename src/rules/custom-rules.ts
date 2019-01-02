@@ -13,14 +13,15 @@ export const customRules: Rules = {
   'no-console': false,
   'no-empty': [true, 'allow-empty-catch'],
   'no-empty-interface': false,
-  'no-implicit-dependencies': [true, 'dev'],
+  'no-import-side-effect': false,
   'no-inferrable-types': [true, 'ignore-params', 'ignore-properties'],
   'no-magic-numbers': false,
   'no-null-keyword': false,
+  'no-object-literal-type-assertion': false,
   'no-parameter-properties': false,
   'no-submodule-imports': false,
   'no-this-assignment': [true, {'allow-destructuring': true}],
-  'no-unbound-method': [true, 'ignore-static'],
+  'no-unbound-method': false,
   'no-unnecessary-callback-wrapper': false,
   'no-unnecessary-class': [
     true,
@@ -29,7 +30,6 @@ export const customRules: Rules = {
     'allow-static-only'
   ],
   'no-unsafe-any': false,
-  'no-unused-variable': false,
   'no-void-expression': [true, 'ignore-arrow-function-shorthand'],
   'object-literal-sort-keys': false,
   'only-arrow-functions': [true, 'allow-declarations'],
@@ -68,4 +68,9 @@ const tsLintVersion = require('tslint/package.json').version;
 
 if (gte(tsLintVersion, '5.11.0')) {
   customRules['file-name-casing'] = [true, 'kebab-case'];
+}
+
+if (gte(tsLintVersion, '5.12.0')) {
+  customRules['ban-ts-ignore'] = false;
+  customRules['no-default-import'] = false;
 }

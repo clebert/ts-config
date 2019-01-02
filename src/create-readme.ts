@@ -7,9 +7,6 @@ import {RuleName, allRules, prettierRules} from './rules';
 import {getHelp, renderRule} from './utils';
 
 const comments: {[ruleName in RuleName]?: string[]} = {
-  'no-unused-variable': [
-    'Deprecated since TypeScript 2.9. Please use the built-in compiler checks instead.'
-  ],
   'switch-default': [
     '**TypeScript-only**: Unnecessary because of the TypeScript setting `--noImplicitReturns`.'
   ]

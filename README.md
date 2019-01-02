@@ -112,7 +112,7 @@ with strict settings. Also, it is assumed that [Prettier](https://prettier.io/)
 is used for formatting your sources.**
 
 The deviations from the configuration preset
-[`tslint:all@5.11.0`](https://github.com/palantir/tslint/blob/5.11.0/src/configs/all.ts)
+[`tslint:all@5.12.0`](https://github.com/palantir/tslint/blob/5.12.0/src/configs/all.ts)
 are documented below:
 
 - [TypeScript and JavaScript rule overrides](#typescript-and-javascript-rule-overrides)
@@ -255,6 +255,14 @@ are documented below:
  }
 ```
 
+#### [no-default-import](https://palantir.github.io/tslint/rules/no-default-import/)
+
+```diff
+{
+-  no-default-import: true
+ }
+```
+
 #### [no-empty](https://palantir.github.io/tslint/rules/no-empty/)
 
 ```diff
@@ -267,15 +275,11 @@ are documented below:
  }
 ```
 
-#### [no-implicit-dependencies](https://palantir.github.io/tslint/rules/no-implicit-dependencies/)
+#### [no-import-side-effect](https://palantir.github.io/tslint/rules/no-import-side-effect/)
 
 ```diff
 {
--  no-implicit-dependencies: true
-+  no-implicit-dependencies: [
-+    true
-+    "dev"
-+  ]
+-  no-import-side-effect: true
  }
 ```
 
@@ -458,6 +462,7 @@ are documented below:
 -  trailing-comma: [
 -    true
 -    {
+-      esSpecCompliant: true
 -      multiline: "always"
 -      singleline: "never"
 -    }
@@ -527,6 +532,14 @@ are documented below:
  }
 ```
 
+#### [ban-ts-ignore](https://palantir.github.io/tslint/rules/ban-ts-ignore/)
+
+```diff
+{
+-  ban-ts-ignore: true
+ }
+```
+
 #### [completed-docs](https://palantir.github.io/tslint/rules/completed-docs/)
 
 ```diff
@@ -575,6 +588,14 @@ are documented below:
  }
 ```
 
+#### [no-object-literal-type-assertion](https://palantir.github.io/tslint/rules/no-object-literal-type-assertion/)
+
+```diff
+{
+-  no-object-literal-type-assertion: true
+ }
+```
+
 #### [no-parameter-properties](https://palantir.github.io/tslint/rules/no-parameter-properties/)
 
 ```diff
@@ -588,10 +609,6 @@ are documented below:
 ```diff
 {
 -  no-unbound-method: true
-+  no-unbound-method: [
-+    true
-+    "ignore-static"
-+  ]
  }
 ```
 
@@ -600,17 +617,6 @@ are documented below:
 ```diff
 {
 -  no-unsafe-any: true
- }
-```
-
-#### [no-unused-variable](https://palantir.github.io/tslint/rules/no-unused-variable/)
-
-- Deprecated since TypeScript 2.9. Please use the built-in compiler checks
-  instead.
-
-```diff
-{
--  no-unused-variable: true
  }
 ```
 
