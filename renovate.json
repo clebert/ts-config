@@ -1,5 +1,8 @@
 {
   "extends": ["config:base", ":preserveSemverRanges"],
-  "semanticCommitType": "build",
+  "packageRules": [
+    {"packagePatterns": ["*"], "semanticCommitType": "build"},
+    {"depTypeList": ["dependencies"], "semanticCommitType": "fix"}
+  ],
   "lockFileMaintenance": {"enabled": true}
 }
