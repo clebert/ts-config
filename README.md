@@ -112,7 +112,7 @@ with strict settings. Also, it is assumed that [Prettier](https://prettier.io/)
 is used for formatting your sources.**
 
 The deviations from the configuration preset
-[`tslint:all@5.12.0`](https://github.com/palantir/tslint/blob/5.12.0/src/configs/all.ts)
+[`tslint:all@5.18.0`](https://github.com/palantir/tslint/blob/5.18.0/src/configs/all.ts)
 are documented below:
 
 - [TypeScript and JavaScript rule overrides](#typescript-and-javascript-rule-overrides)
@@ -127,14 +127,16 @@ are documented below:
 
 ```diff
 {
--  align: [
--    true
--    "parameters"
--    "arguments"
--    "statements"
--    "elements"
--    "members"
--  ]
+-  align: {
+-    options: [
+-      "parameters"
+-      "arguments"
+-      "statements"
+-      "elements"
+-      "members"
+-    ]
+-  }
++  align: false
  }
 ```
 
@@ -145,6 +147,7 @@ are documented below:
 ```diff
 {
 -  arrow-parens: true
++  arrow-parens: false
  }
 ```
 
@@ -152,11 +155,21 @@ are documented below:
 
 ```diff
 {
-   comment-format: [
-     true
-     "check-space"
--    "check-uppercase"
-   ]
+   comment-format: {
+     options: [
+       "check-space"
+-      "check-uppercase"
+     ]
+   }
+ }
+```
+
+#### [completed-docs](https://palantir.github.io/tslint/rules/completed-docs/)
+
+```diff
+{
+-  completed-docs: true
++  completed-docs: false
  }
 ```
 
@@ -164,11 +177,12 @@ are documented below:
 
 ```diff
 {
-   file-name-casing: [
-     true
--    "camel-case"
-+    "kebab-case"
-   ]
+   file-name-casing: {
+-    options: "camel-case"
++    options: [
++      "kebab-case"
++    ]
+   }
  }
 ```
 
@@ -178,10 +192,12 @@ are documented below:
 
 ```diff
 {
--  indent: [
--    true
--    "spaces"
--  ]
+-  indent: {
+-    options: [
+-      "spaces"
+-    ]
+-  }
++  indent: false
  }
 ```
 
@@ -189,10 +205,10 @@ are documented below:
 
 ```diff
 {
--  max-classes-per-file: [
--    true
--    1
--  ]
+-  max-classes-per-file: {
+-    options: 1
+-  }
++  max-classes-per-file: false
  }
 ```
 
@@ -200,10 +216,10 @@ are documented below:
 
 ```diff
 {
--  max-file-line-count: [
--    true
--    1000
--  ]
+-  max-file-line-count: {
+-    options: 1000
+-  }
++  max-file-line-count: false
  }
 ```
 
@@ -213,10 +229,12 @@ are documented below:
 
 ```diff
 {
--  max-line-length: [
--    true
--    120
--  ]
+-  max-line-length: {
+-    options: {
+-      limit: 120
+-    }
+-  }
++  max-line-length: false
  }
 ```
 
@@ -224,16 +242,11 @@ are documented below:
 
 ```diff
 {
-   member-ordering: [
-     true
--    {
--      order: "statics-first"
+   member-ordering: {
+     options: {
 -      alphabetize: true
--    }
-+    {
-+      order: "statics-first"
-+    }
-   ]
+     }
+   }
  }
 ```
 
@@ -244,6 +257,7 @@ are documented below:
 ```diff
 {
 -  newline-per-chained-call: true
++  newline-per-chained-call: false
  }
 ```
 
@@ -252,6 +266,7 @@ are documented below:
 ```diff
 {
 -  no-console: true
++  no-console: false
  }
 ```
 
@@ -260,6 +275,7 @@ are documented below:
 ```diff
 {
 -  no-default-import: true
++  no-default-import: false
  }
 ```
 
@@ -268,10 +284,11 @@ are documented below:
 ```diff
 {
 -  no-empty: true
-+  no-empty: [
-+    true
-+    "allow-empty-catch"
-+  ]
++  no-empty: {
++    options: [
++      "allow-empty-catch"
++    ]
++  }
  }
 ```
 
@@ -280,6 +297,7 @@ are documented below:
 ```diff
 {
 -  no-import-side-effect: true
++  no-import-side-effect: false
  }
 ```
 
@@ -288,6 +306,7 @@ are documented below:
 ```diff
 {
 -  no-magic-numbers: true
++  no-magic-numbers: false
  }
 ```
 
@@ -296,6 +315,7 @@ are documented below:
 ```diff
 {
 -  no-null-keyword: true
++  no-null-keyword: false
  }
 ```
 
@@ -304,6 +324,7 @@ are documented below:
 ```diff
 {
 -  no-submodule-imports: true
++  no-submodule-imports: false
  }
 ```
 
@@ -312,12 +333,11 @@ are documented below:
 ```diff
 {
 -  no-this-assignment: true
-+  no-this-assignment: [
-+    true
-+    {
++  no-this-assignment: {
++    options: {
 +      allow-destructuring: true
 +    }
-+  ]
++  }
  }
 ```
 
@@ -326,6 +346,7 @@ are documented below:
 ```diff
 {
 -  no-unnecessary-callback-wrapper: true
++  no-unnecessary-callback-wrapper: false
  }
 ```
 
@@ -333,12 +354,13 @@ are documented below:
 
 ```diff
 {
-   no-unnecessary-class: [
-     true
-+    "allow-constructor-only"
-     "allow-empty-class"
-+    "allow-static-only"
-   ]
+   no-unnecessary-class: {
+     options: [
++      "allow-constructor-only"
+       "allow-empty-class"
++      "allow-static-only"
+     ]
+   }
  }
 ```
 
@@ -348,10 +370,10 @@ are documented below:
 
 ```diff
 {
--  object-literal-key-quotes: [
--    true
--    "consistent-as-needed"
--  ]
+-  object-literal-key-quotes: {
+-    options: "consistent-as-needed"
+-  }
++  object-literal-key-quotes: false
  }
 ```
 
@@ -360,6 +382,7 @@ are documented below:
 ```diff
 {
 -  object-literal-sort-keys: true
++  object-literal-sort-keys: false
  }
 ```
 
@@ -368,10 +391,11 @@ are documented below:
 ```diff
 {
 -  only-arrow-functions: true
-+  only-arrow-functions: [
-+    true
-+    "allow-declarations"
-+  ]
++  only-arrow-functions: {
++    options: [
++      "allow-declarations"
++    ]
++  }
  }
 ```
 
@@ -379,18 +403,16 @@ are documented below:
 
 ```diff
 {
-   ordered-imports: [
-     true
--    {
--      import-sources-order: "case-insensitive"
--      named-imports-order: "case-insensitive"
+   ordered-imports: {
+     options: {
+-      grouped-imports: true
 -      module-source-path: "full"
--    }
-+    {
+-      import-sources-order: "case-insensitive"
 +      import-sources-order: "lowercase-last"
+-      named-imports-order: "case-insensitive"
 +      named-imports-order: "lowercase-last"
-+    }
-   ]
+     }
+   }
  }
 ```
 
@@ -399,6 +421,7 @@ are documented below:
 ```diff
 {
 -  prefer-function-over-method: true
++  prefer-function-over-method: false
  }
 ```
 
@@ -407,10 +430,11 @@ are documented below:
 ```diff
 {
 -  prefer-template: true
-+  prefer-template: [
-+    true
-+    "allow-single-concat"
-+  ]
++  prefer-template: {
++    options: [
++      "allow-single-concat"
++    ]
++  }
  }
 ```
 
@@ -420,12 +444,14 @@ are documented below:
 
 ```diff
 {
--  quotemark: [
--    true
--    "double"
--    "avoid-escape"
--    "avoid-template"
--  ]
+-  quotemark: {
+-    options: [
+-      "double"
+-      "avoid-escape"
+-      "avoid-template"
+-    ]
+-  }
++  quotemark: false
  }
 ```
 
@@ -435,10 +461,12 @@ are documented below:
 
 ```diff
 {
--  semicolon: [
--    true
--    "always"
--  ]
+-  semicolon: {
+-    options: [
+-      "always"
+-    ]
+-  }
++  semicolon: false
  }
 ```
 
@@ -450,6 +478,7 @@ are documented below:
 ```diff
 {
 -  switch-default: true
++  switch-default: false
  }
 ```
 
@@ -459,14 +488,14 @@ are documented below:
 
 ```diff
 {
--  trailing-comma: [
--    true
--    {
+-  trailing-comma: {
+-    options: {
 -      esSpecCompliant: true
 -      multiline: "always"
 -      singleline: "never"
 -    }
--  ]
+-  }
++  trailing-comma: false
  }
 ```
 
@@ -475,10 +504,11 @@ are documented below:
 ```diff
 {
 -  triple-equals: true
-+  triple-equals: [
-+    true
-+    "allow-null-check"
-+  ]
++  triple-equals: {
++    options: [
++      "allow-null-check"
++    ]
++  }
  }
 ```
 
@@ -486,13 +516,15 @@ are documented below:
 
 ```diff
 {
-   variable-name: [
-     true
-     "ban-keywords"
-     "check-format"
-+    "allow-pascal-case"
-+    "allow-leading-underscore"
-   ]
+   variable-name: {
+     options: [
+       "ban-keywords"
+       "check-format"
+-      "require-const-for-all-caps"
++      "allow-pascal-case"
++      "allow-leading-underscore"
+     ]
+   }
  }
 ```
 
@@ -502,19 +534,21 @@ are documented below:
 
 ```diff
 {
--  whitespace: [
--    true
--    "check-branch"
--    "check-decl"
--    "check-operator"
--    "check-module"
--    "check-separator"
--    "check-type"
--    "check-typecast"
--    "check-preblock"
--    "check-type-operator"
--    "check-rest-spread"
--  ]
+-  whitespace: {
+-    options: [
+-      "check-branch"
+-      "check-decl"
+-      "check-operator"
+-      "check-module"
+-      "check-separator"
+-      "check-type"
+-      "check-typecast"
+-      "check-preblock"
+-      "check-type-operator"
+-      "check-rest-spread"
+-    ]
+-  }
++  whitespace: false
  }
 ```
 
@@ -524,11 +558,12 @@ are documented below:
 
 ```diff
 {
-   array-type: [
-     true
--    "array-simple"
-+    "array"
-   ]
+   array-type: {
+-    options: "array-simple"
++    options: [
++      "array"
++    ]
+   }
  }
 ```
 
@@ -537,14 +572,7 @@ are documented below:
 ```diff
 {
 -  ban-ts-ignore: true
- }
-```
-
-#### [completed-docs](https://palantir.github.io/tslint/rules/completed-docs/)
-
-```diff
-{
--  completed-docs: true
++  ban-ts-ignore: false
  }
 ```
 
@@ -553,10 +581,11 @@ are documented below:
 ```diff
 {
 -  interface-name: true
-+  interface-name: [
-+    true
-+    "never-prefix"
-+  ]
++  interface-name: {
++    options: [
++      "never-prefix"
++    ]
++  }
  }
 ```
 
@@ -565,6 +594,7 @@ are documented below:
 ```diff
 {
 -  match-default-export-name: true
++  match-default-export-name: false
  }
 ```
 
@@ -573,6 +603,7 @@ are documented below:
 ```diff
 {
 -  no-empty-interface: true
++  no-empty-interface: false
  }
 ```
 
@@ -580,11 +611,12 @@ are documented below:
 
 ```diff
 {
-   no-inferrable-types: [
-     true
-     "ignore-params"
-+    "ignore-properties"
-   ]
+   no-inferrable-types: {
+     options: [
+       "ignore-params"
++      "ignore-properties"
+     ]
+   }
  }
 ```
 
@@ -593,6 +625,7 @@ are documented below:
 ```diff
 {
 -  no-object-literal-type-assertion: true
++  no-object-literal-type-assertion: false
  }
 ```
 
@@ -601,6 +634,7 @@ are documented below:
 ```diff
 {
 -  no-parameter-properties: true
++  no-parameter-properties: false
  }
 ```
 
@@ -609,6 +643,7 @@ are documented below:
 ```diff
 {
 -  no-unbound-method: true
++  no-unbound-method: false
  }
 ```
 
@@ -617,6 +652,16 @@ are documented below:
 ```diff
 {
 -  no-unsafe-any: true
++  no-unsafe-any: false
+ }
+```
+
+#### [no-use-before-declare](https://palantir.github.io/tslint/rules/no-use-before-declare/)
+
+```diff
+{
+-  no-use-before-declare: true
++  no-use-before-declare: false
  }
 ```
 
@@ -625,10 +670,11 @@ are documented below:
 ```diff
 {
 -  no-void-expression: true
-+  no-void-expression: [
-+    true
-+    "ignore-arrow-function-shorthand"
-+  ]
++  no-void-expression: {
++    options: [
++      "ignore-arrow-function-shorthand"
++    ]
++  }
  }
 ```
 
@@ -637,6 +683,7 @@ are documented below:
 ```diff
 {
 -  return-undefined: true
++  return-undefined: false
  }
 ```
 
@@ -645,12 +692,20 @@ are documented below:
 ```diff
 {
 -  strict-boolean-expressions: true
-+  strict-boolean-expressions: [
-+    "allow-null-union"
-+    "allow-undefined-union"
-+    "allow-string"
-+    "allow-number"
-+  ]
++  strict-boolean-expressions: false
+ }
+```
+
+#### [strict-comparisons](https://palantir.github.io/tslint/rules/strict-comparisons/)
+
+```diff
+{
+-  strict-comparisons: true
++  strict-comparisons: {
++    options: {
++      allow-object-equal-comparison: true
++    }
++  }
  }
 ```
 
@@ -659,6 +714,7 @@ are documented below:
 ```diff
 {
 -  strict-type-predicates: true
++  strict-type-predicates: false
  }
 ```
 
@@ -666,16 +722,17 @@ are documented below:
 
 ```diff
 {
-   typedef: [
-     true
-     "call-signature"
--    "arrow-call-signature"
-     "parameter"
--    "arrow-parameter"
-     "property-declaration"
--    "variable-declaration"
--    "member-variable-declaration"
-   ]
+   typedef: {
+     options: [
+       "call-signature"
+-      "arrow-call-signature"
+       "parameter"
+-      "arrow-parameter"
+       "property-declaration"
+-      "variable-declaration"
+-      "member-variable-declaration"
+     ]
+   }
  }
 ```
 
@@ -686,6 +743,7 @@ are documented below:
 ```diff
 {
 -  no-require-imports: true
++  no-require-imports: false
  }
 ```
 
@@ -696,6 +754,7 @@ are documented below:
 
 ```diff
 {
+-  switch-default: false
 +  switch-default: true
  }
 ```

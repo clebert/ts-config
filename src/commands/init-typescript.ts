@@ -63,5 +63,7 @@ export default class InitTypeScript extends oclif.Command {
       },
       flags.force
     );
+
+    return;
   }
 }

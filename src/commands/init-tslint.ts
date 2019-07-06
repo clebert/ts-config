@@ -37,5 +37,7 @@ export default class InitTsLint extends oclif.Command {
       },
       flags.force
     );
+
+    return;
   }
 }
