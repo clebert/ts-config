@@ -41,7 +41,7 @@
     "globby": "^10.0.1",
     "json-diff": "^0.5.4",
     "prettier": "^1.18.2",
-    "semver": "^6.2.0"
+    "semver": "^7.0.0"
   },
   "peerDependencies": {
     "tslint": "^5.10.0",
@@ -54,7 +54,7 @@
     "@types/common-tags": "^1.8.0",
     "@types/node": "^12.0.12",
     "@types/prettier": "^1.16.4",
-    "@types/semver": "^6.0.1",
+    "@types/semver": "^7.0.0",
     "autosrc": "^0.12.0",
     "husky": "^3.0.0",
     "semantic-release": "^15.13.18",
