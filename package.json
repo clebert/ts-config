@@ -57,7 +57,7 @@
     "@types/semver": "^6.0.1",
     "autosrc": "^0.12.0",
     "husky": "^3.0.0",
-    "semantic-release": "^15.13.18",
+    "semantic-release": "^17.0.0",
     "travis-deploy-once": "^5.0.11",
     "tslint": "^5.18.0",
     "typescript": "~3.5.2"
