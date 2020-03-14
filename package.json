@@ -44,7 +44,7 @@
     "semver": "^6.2.0"
   },
   "peerDependencies": {
-    "tslint": "^5.10.0",
+    "tslint": "^6.0.0",
     "typescript": "*"
   },
   "devDependencies": {
@@ -59,7 +59,7 @@
     "husky": "^3.0.0",
     "semantic-release": "^15.13.18",
     "travis-deploy-once": "^5.0.11",
-    "tslint": "^5.18.0",
+    "tslint": "^6.0.0",
     "typescript": "~3.5.2"
   }
 }
